@@ -86,5 +86,247 @@
 			L = m_e v r = n\hbar,\qquad n\in\mathbb{N}.
 		\]
 	\end{enumerate}
+	\section{Dynamica: Coulombkracht als centripetale kracht}
+	Neem een cirkelbaan met straal $r$ en snelheid $v$. De Coulombkracht levert de centripetale kracht:
+	\begin{align}
+		\frac{m_e v^2}{r} &= \frac{1}{4\pi\varepsilon_0}\frac{Z e^2}{r^2}.
+		\label{eq:coulomb_centripetaal}
+	\end{align}
+	De uitkomst wordt uitgedrukt in Newton (N)\\
 
-	\end{document}
+	Definieer voor compactheid
+	\[
+		k \equiv \frac{1}{4\pi\varepsilon_0}.
+	\]
+	Dan wordt \eqref{eq:coulomb_centripetaal}
+	\begin{align}
+		m_e v^2 &= \frac{k Z e^2}{r}.
+		\label{eq:mv2}
+	\end{align}
+
+	e is de elementaire lading en wordt uitgedrukt in Coulomb (C)\\
+	$\varepsilon_0$ is de permittiviteit van het vacuüm en wordt uitgedrukt in Farad per meter (F/m)\\
+	r is de afstand van het elektron tot de kern en wordt uitgedrukt in meter (m)\\
+	$m_e$ is de massa van het elektron en wordt uitgedrukt in kilogram (kg)\\
+	v is de snelheid van het elektron en wordt uitgedrukt in meter per seconde (m/s)\\
+	\section{Quantisatie van het impulsmoment en straal van de banen}
+	Uit $L=m_e v r = n\hbar$ volgt
+	\begin{align}
+		v &= \frac{n\hbar}{m_e r}.
+		\label{eq:v_from_L}
+	\end{align}
+	Combineer \eqref{eq:mv2} en \eqref{eq:v_from_L}:
+	\begin{align}
+		m_e\left(\frac{n\hbar}{m_e r}\right)^2 &= \frac{k Z e^2}{r}
+		\\
+		\frac{n^2\hbar^2}{m_e r^2} &= \frac{k Z e^2}{r}
+		\\
+		r_n &= \frac{n^2\hbar^2}{m_e k Z e^2}.
+		\label{eq:bohr_radius_general}
+	\end{align}
+	Voor $Z=1$ definieert men de \emph{Bohrstraal}
+	\begin{align}
+		a_0 \equiv \frac{\hbar^2}{m_e k e^2} = \frac{4\pi\varepsilon_0\hbar^2}{m_e e^2},
+	\end{align}
+	zodat
+	\begin{align}
+		r_n = \frac{n^2}{Z}\,a_0.
+	\end{align}
+	waarbij $\hbar$ de gereduceerde Planck-constante is,
+	$m_e$ de massa van het elektron,
+	$k$ de constante gedefinieerd als $\frac{1}{4\pi\varepsilon_0}$, $Z$ de kernlading,
+	en $e$ de elementaire lading. De Bohrstraal
+	$a_0$ is een fundamentele lengte-eenheid in de atoomfysica en heeft een waarde van ongeveer 0.529 Ångström (Å), wat overeenkomt met de straal van de grondtoestand van het waterstofatoom.
+	\section{Snelheden en de fijnstructuurconstante}
+	Uit \eqref{eq:mv2} en \eqref{eq:bohr_radius_general} volgt ook een eenvoudige uitdrukking voor $v_n$.
+	Gebruik \eqref{eq:v_from_L} met $r=r_n$:
+	\begin{align}
+		v_n &= \frac{n\hbar}{m_e r_n}
+		= \frac{n\hbar}{m_e}\,\frac{m_e k Z e^2}{n^2\hbar^2}
+		= \frac{k Z e^2}{n\hbar}.
+	\end{align}
+	Met $\alpha$ de fijnstructuurconstante,
+	\[
+		\alpha \equiv \frac{e^2}{4\pi\varepsilon_0\hbar c} = \frac{k e^2}{\hbar c},
+	\]
+	krijg je
+	\begin{align}
+		\frac{v_n}{c} = \frac{Z\alpha}{n}.
+	\end{align}
+	Dit toont meteen de \emph{consistentievoorwaarde} voor een niet-relativistische behandeling: $Z\alpha/n\ll 1$.
+\\
+	waarbij:\\
+	$v_n$ de snelheid van het elektron in baan $n$ is en wordt uitgedrukt in meter per seconde (m/s)\\
+	$n$ het hoofdkwantumgetal is (een positief geheel getal)\\
+	$\hbar$ de gereduceerde Planck-constante is ($\hbar = h/2\pi \approx 1.055 \times 10^{-34}$ J·s)\\
+	$m_e$ de massa van het elektron is ($\approx 9.109 \times 10^{-31}$ kg)\\
+	$r_n$ de straal van de $n$-de baan is en wordt uitgedrukt in meter (m)\\
+	$k$ de constante is gedefinieerd als $\frac{1}{4\pi\varepsilon_0}$ ($\approx 8.988 \times 10^9$ N·m²/C²)\\
+	$Z$ de kernlading is (het aantal protonen in de kern)\\
+	$e$ de elementaire lading is ($\approx 1.602 \times 10^{-19}$ C)\\
+	$\alpha$ de fijnstructuurconstante is, een dimensieloze natuurconstante ($\alpha \approx 1/137 \approx 0.0073$)\\
+	$\varepsilon_0$ de permittiviteit van het vacuüm is ($\approx 8.854 \times 10^{-12}$ F/m)\\
+	$c$ de lichtsnelheid in vacuüm is ($\approx 2.998 \times 10^8$ m/s)\\
+
+	\section{Energieën van de stationaire toestanden}
+	De totale mechanische energie is
+	\[
+		E = T + V,
+	\]
+	met kinetische energie $T=\frac12 m_e v^2$ en potenti\"ele energie
+	\[
+		V(r) = -k\frac{Z e^2}{r}.
+	\]
+	Gebruik \eqref{eq:mv2}: $m_e v^2 = \frac{k Z e^2}{r}$, dus
+	\begin{align}
+		T &= \frac12\,\frac{k Z e^2}{r},
+		\\
+		E &= \frac12\,\frac{k Z e^2}{r} - \frac{k Z e^2}{r}
+		= -\frac12\,\frac{k Z e^2}{r}.
+		\label{eq:E_vs_r}
+	\end{align}
+	Invullen van $r=r_n$ uit \eqref{eq:bohr_radius_general} geeft
+	\begin{align}
+		E_n
+		&= -\frac12\,\frac{k Z e^2}{r_n}
+		= -\frac12\,k Z e^2\left(\frac{m_e k Z e^2}{n^2\hbar^2}\right)
+		\\
+		&= -\frac{m_e k^2 Z^2 e^4}{2\hbar^2}\,\frac{1}{n^2}.
+		\label{eq:bohr_energy_general}
+	\end{align}
+	Voor waterstof ($Z=1$) is
+	\[
+		E_n = -\frac{m_e k^2 e^4}{2\hbar^2}\frac{1}{n^2}
+		\approx -\frac{13.6\,\mathrm{eV}}{n^2}.
+	\]
+
+	voor de volledigheid geven we hier ook de betekenis van de symbolen die in deze formules voorkomen:
+	waarbij:\\
+	$E$ de totale mechanische energie is en wordt uitgedrukt in joule (J) of elektronvolt (eV)\\
+	$T$ de kinetische energie is (bewegingsenergie van het elektron) en wordt uitgedrukt in joule (J)\\
+	$V$ de potentiële energie is (elektrische energie door Coulombkracht) en wordt uitgedrukt in joule (J)\\
+	$m_e$ de massa van het elektron is ($\approx 9.109 \times 10^{-31}$ kg)\\
+	$v$ de snelheid van het elektron is en wordt uitgedrukt in meter per seconde (m/s)\\
+	$k$ de constante is gedefinieerd als $\frac{1}{4\pi\varepsilon_0}$ ($\approx 8.988 \times 10^9$ N·m²/C²)\\
+	$Z$ de kernlading is (het aantal protonen in de kern)\\
+	$e$ de elementaire lading is ($\approx 1.602 \times 10^{-19}$ C)\\
+	$r$ de afstand van het elektron tot de kern is en wordt uitgedrukt in meter (m)\\
+	$E_n$ de energie van het elektron in de $n$-de stationaire baan is\\
+	$r_n$ de straal van de $n$-de baan is en wordt uitgedrukt in meter (m)\\
+	$n$ het hoofdkwantumgetal is (een positief geheel getal: $n = 1, 2, 3, \ldots$)\\
+	$\hbar$ de gereduceerde Planck-constante is ($\hbar = h/2\pi \approx 1.055 \times 10^{-34}$ J·s)\\
+	eV elektronvolt is, een energie-eenheid (1 eV $\approx 1.602 \times 10^{-19}$ J)\\
+	\\
+	De negatieve waarde van $E_n$ geeft aan dat het elektron gebonden is aan de kern. Hoe negatiever de energie, hoe sterker het elektron gebonden is. Bij $E = 0$ is het elektron vrij (geïoniseerd).
+
+	\subsection{Spectrale lijnen: Rydberg-formule}
+	Bij een overgang $n\to m$ ($n>m$) geldt Bohrs frequentievoorwaarde
+	\[
+		h\nu = E_n - E_m.
+	\]
+	Met \eqref{eq:bohr_energy_general}:
+	\begin{align}
+		h\nu
+		&= \frac{m_e k^2 Z^2 e^4}{2\hbar^2}\left(\frac{1}{m^2}-\frac{1}{n^2}\right).
+	\end{align}
+	Gebruik $\nu=c/\lambda$ en $h=2\pi\hbar$:
+	\begin{align}
+		\frac{1}{\lambda}
+		&= \frac{\nu}{c}
+		= \frac{m_e k^2 Z^2 e^4}{2\hbar^2}\,\frac{1}{h c}\left(\frac{1}{m^2}-\frac{1}{n^2}\right)
+		\\
+		&= \left[\frac{m_e k^2 e^4}{4\pi\hbar^3 c}\right] Z^2
+		\left(\frac{1}{m^2}-\frac{1}{n^2}\right).
+	\end{align}
+	De factor tussen vierkante haken definieert de \emph{Rydberg-constante} (in deze eenvoudige versie met $m_e$):
+	\begin{align}
+		R_\infty \equiv \frac{m_e k^2 e^4}{4\pi\hbar^3 c}
+		= \frac{m_e e^4}{8\varepsilon_0^2 h^3 c}.
+	\end{align}
+	Dan volgt de klassieke Rydberg-formule:
+	\begin{align}
+		\frac{1}{\lambda} = R_\infty Z^2\left(\frac{1}{m^2}-\frac{1}{n^2}\right).
+	\end{align}
+
+	waarbij:\\
+	$h$ de Planck-constante is ($h \approx 6.626 \times 10^{-34}$ J·s)\\
+	$\nu$ de frequentie van het uitgezonden of geabsorbeerde licht is en wordt uitgedrukt in hertz (Hz of s$^{-1}$)\\
+	$E_n$ de energie van het elektron in de $n$-de stationaire baan is\\
+	$E_m$ de energie van het elektron in de $m$-de stationaire baan is\\
+	$n$ het hogere energieniveau is (positief geheel getal, $n > m$)\\
+	$m$ het lagere energieniveau is (positief geheel getal)\\
+	$m_e$ de massa van het elektron is ($\approx 9.109 \times 10^{-31}$ kg)\\
+	$k$ de constante is gedefinieerd als $\frac{1}{4\pi\varepsilon_0}$ ($\approx 8.988 \times 10^9$ N·m²/C²)\\
+	$Z$ de kernlading is (het aantal protonen in de kern)\\
+	$e$ de elementaire lading is ($\approx 1.602 \times 10^{-19}$ C)\\
+	$\hbar$ de gereduceerde Planck-constante is ($\hbar = h/2\pi \approx 1.055 \times 10^{-34}$ J·s)\\
+	$c$ de lichtsnelheid in vacuüm is ($\approx 2.998 \times 10^8$ m/s)\\
+	$\lambda$ de golflengte van het uitgezonden of geabsorbeerde licht is en wordt uitgedrukt in meter (m)\\
+	$R_\infty$ de Rydberg-constante is ($R_\infty \approx 1.097 \times 10^7$ m$^{-1}$)\\
+	$\varepsilon_0$ de permittiviteit van het vacuüm is ($\approx 8.854 \times 10^{-12}$ F/m)\\
+	\\
+	De Rydberg-formule voorspelt de golflengtes van de spectrale lijnen die een waterstofachtig atoom uitzendt. Voor waterstof ($Z=1$) verklaart deze formule de bekende spectraalseries zoals de Lyman-serie ($m=1$), Balmer-serie ($m=2$), en Paschen-serie ($m=3$).
+	\section{Verbetering: gereduceerde massa (kern niet oneindig zwaar)}
+	Strikt genomen draait niet alleen het elektron rond de kern: beide draaien rond het massamiddelpunt.
+	Vervang daarom $m_e$ door de \emph{gereduceerde massa}
+	\[
+		\mu = \frac{m_e M}{m_e+M},
+	\]
+	waar $M$ de kernmassa is. Dan worden
+	\begin{align}
+		r_n &= \frac{n^2\hbar^2}{\mu k Z e^2},
+		\\
+		E_n &= -\frac{\mu k^2 Z^2 e^4}{2\hbar^2}\frac{1}{n^2},
+		\\
+		R &= R_\infty\frac{\mu}{m_e}.
+	\end{align}
+	Dit verklaart een deel van het isotopen-effect in spectra.
+
+	\section{De Broglie-herinterpretatie (brug naar golven)}
+	Bohrs quantisatievoorwaarde $m_e v r = n\hbar$ kan ook worden gezien als een staande-golfvoorwaarde.
+	De Broglie geeft de golflengte
+	\[
+		\lambda = \frac{h}{p}=\frac{h}{m_e v}.
+	\]
+	Een staande golf op een cirkel vereist
+	\[
+		2\pi r = n\lambda = n\frac{h}{m_e v}
+		\quad\Longrightarrow\quad
+		m_e v r = n\hbar,
+	\]
+	dus Bohrs postulaten kunnen (deels) gemotiveerd worden vanuit golfmechanica.\\
+	Zoals we in het vorige hoofdstuk besproken hebben, heeft het model van Bohr enkele beperkingen.
+	We sommen deze hier nog eens op met een diepere wiskundige uitleg:
+	\section{Beperkingen (conceptueel belangrijk)}
+	Hoewel Bohr het waterstofspectrum goed benadert, is het model fundamenteel semi-klassiek:
+	\begin{itemize}
+		\item Het veronderstelt \emph{klassieke} banen (in tegenspraak met moderne QM waar toestanden golffuncties zijn).
+		\item Het verklaart niet systematisch fijnstructuur, Zeeman/Stark-effecten, intensiteiten en selectie-regels
+		(daarvoor heb je Schr\"odinger/Dirac + perturbatietheorie nodig).
+		\item Voor grote $Z$ worden relativistische en QED-correcties belangrijk omdat $v/c\sim Z\alpha$.
+	\end{itemize}
+
+	\subsection{Wat is QED?}
+	QED staat voor \emph{Quantum Electrodynamics} (Kwantumelektrodynamica in het Nederlands) en is de kwantumtheorie van elektromagnetische interacties.
+	Het is een van de meest nauwkeurige en succesvol geteste theorieën in de natuurkunde.
+
+	Belangrijke aspecten van QED:
+	\begin{itemize}
+		\item \textbf{Fundamentele theorie:} QED beschrijft hoe geladen deeltjes (zoals elektronen) wisselwerken met fotonen (de kwanta van het elektromagnetische veld). Het combineert kwantummechanica met speciale relativiteitstheorie.
+
+		\item \textbf{Ontwikkeling:} De theorie werd ontwikkeld in de late jaren 1940 door Richard Feynman, Julian Schwinger en Sin-Itiro Tomonaga, waarvoor zij in 1965 de Nobelprijs kregen.
+
+		\item \textbf{QED-correcties in atoomfysica:} Voor het waterstofatoom voorspelt QED extreem kleine maar meetbare correcties op de energieniveaus, zoals:
+		\begin{itemize}
+			\item De \emph{Lamb-verschuiving}: een klein verschil tussen de $2S_{1/2}$ en $2P_{1/2}$ energieniveaus, veroorzaakt door kwantumfluctuaties van het elektromagnetische vacuüm.
+			\item Correcties door \emph{vacuümpolarisatie}: virtuele elektron-positronparen beïnvloeden de effectieve lading van de kern.
+			\item De afwijking van het magnetische moment van het elektron van de Dirac-waarde (het zogeheten \emph{anomale magnetische moment}, $g-2$).
+		\end{itemize}
+
+		\item \textbf{Nauwkeurigheid:} QED-berekeningen komen overeen met experimenten tot ongeveer 12 significante cijfers, wat het een van de meest nauwkeurig geteste theorieën in de wetenschap maakt.
+
+		\item \textbf{Belang voor grote $Z$:} Voor atomen met hoge kernlading $Z$ worden QED-effecten belangrijker omdat de elektronsnelheid $v/c \sim Z\alpha$ toeneemt. Bij zeer zware elementen kunnen deze correcties niet meer verwaarloosd worden.
+	\end{itemize}
+
+	In het Bohr-model worden deze subtiele kwantumeffecten volledig genegeerd, wat verklaart waarom het model slechts een benadering is van de werkelijkheid.
+\end{document}
