@@ -7,6 +7,7 @@
 \usepackage{pgfplots}
 \usepackage{epigraph}
 \usepackage{hyperref}
+\usepackage{physics}
 
 \title{Quantum Mechanica Inleiding}
 \author{Jeroen Vermeulen}
@@ -339,13 +340,205 @@
 	Deze nieuwe theorie heeft niet alleen de beperkingen van het Bohr-model overwonnen, maar heeft ook geleid tot een dieper begrip van de natuur en heeft talloze toepassingen in de moderne technologie, zoals in de ontwikkeling van halfgeleiders, lasers en kwantumcomputers.
 	Het is belangrijk om te vermelden dat aan het zogeheten correspondentie pricipe volledig voldaan wordt: voor grote $n$ (en dus grote banen) benadert het Bohr-model de resultaten van de kwantummechanica,
 	wat aantoont dat de klassieke natuurkunde een goede benadering is van de kwantummechanica in het macroscopische regime.
-    Laten we maar direct van start gaan en beginnen met de golffunctie en het dubbel-spleet experiment,
-	dat een van de meest iconische experimenten is in de geschiedenis van de kwantummechanica en een cruciale rol heeft gespeeld in het begrijpen van de aard van deeltjes en golven.
+    
+	\chapter{operator-formalisme}
+     	\epigraph{“The mathematical formulation of quantum mechanics is not unique. There are many ways to formulate it, and they are all equivalent.”}{Paul Dirac}
+	\section{Operator-formalisme in de Quantummechanica:
+	Functionaal-analytische formulering}
+
+	\section{Hilbertruimte-structuur}
+
+	Een kwantumsysteem wordt gemodelleerd door een complexe separabele Hilbertruimte
+	$\mathcal{H}$ met inwendig product
+	$\langle \cdot , \cdot \rangle$, lineair in de tweede component.
+
+	De norm wordt gegeven door:
+	\begin{equation}
+		\|\psi\| = \sqrt{\langle \psi,\psi \rangle}
+	\end{equation}
+
+	Fysische toestanden worden gerepresenteerd door stralen in $\mathcal{H}$,
+	d.w.z. equivalentieklassen
+	\[
+		|\psi\rangle \sim \lambda |\psi\rangle,
+		\quad \lambda \in \mathbb{C}\setminus\{0\}.
+	\]
+
+	\section{Lineaire Operatoren en Domeinen}
+
+	Een lineaire operator is een afbeelding
+	\[
+		\hat{A} : \mathcal{D}(\hat{A}) \subset \mathcal{H}
+		\to \mathcal{H}
+	\]
+	waar $\mathcal{D}(\hat{A})$ het domein is.
+
+	Voor fysische observabelen zijn operatoren in het algemeen
+	\emph{onbegrensd}, waardoor:
+
+	\begin{itemize}
+		\item $\mathcal{D}(\hat{A}) \neq \mathcal{H}$
+		\item $\hat{A}$ niet continu is
+	\end{itemize}
+
+	Een operator is \textbf{dicht gedefinieerd} indien
+	$\overline{\mathcal{D}(\hat{A})} = \mathcal{H}$.
+
+	\section{Adjoints, Symmetrie en Zelf-adjunctheid}
+
+	De geadjungeerde operator $\hat{A}^\dagger$ is gedefinieerd via:
+
+	\begin{equation}
+		\langle \phi, \hat{A}\psi \rangle
+		=
+		\langle \hat{A}^\dagger \phi, \psi \rangle
+	\end{equation}
+
+	voor alle $\psi \in \mathcal{D}(\hat{A})$ waarvoor
+	de linkerzijde continu is in $\phi$.
+
+	Een operator heet:
+
+	\begin{itemize}
+		\item \textbf{Symmetrisch} indien
+		$\hat{A} \subset \hat{A}^\dagger$
+		\item \textbf{Zelf-adjunct} indien
+		$\hat{A} = \hat{A}^\dagger$
+		\item \textbf{Essentieel zelf-adjunct} indien de sluiting
+		$\overline{\hat{A}}$ zelf-adjunct is
+	\end{itemize}
+
+	Voor observabelen is \emph{zelf-adjunctheid} noodzakelijk,
+	niet enkel symmetrie.
+
+	\section*{4. Spectraaltheorema}
+
+	Voor elke zelf-adjuncte operator $\hat{A}$ bestaat er een unieke
+	projectiemaat $E_A(\lambda)$ zodat:
+
+	\begin{equation}
+		\hat{A} =
+		\int_{\sigma(\hat{A})}
+		\lambda \, dE_A(\lambda)
+	\end{equation}
+
+	waar $\sigma(\hat{A})$ het spectrum is.
+
+	De verwachtingswaarde wordt dan:
+
+	\begin{equation}
+		\langle \psi, \hat{A}\psi \rangle
+		=
+		\int_{\sigma(\hat{A})}
+		\lambda \,
+		d\mu_\psi(\lambda)
+	\end{equation}
+
+	met maat
+	\[
+		\mu_\psi(\Delta)
+		=
+		\langle \psi, E_A(\Delta)\psi\rangle.
+	\]
+
+	\section{Continue Spectra en Rigged Hilbert Space}
+
+	Voor operatoren met continu spectrum (bv. impulsoperator)
+	liggen de gegeneraliseerde eigenvectoren niet in $\mathcal{H}$.
+
+	Men gebruikt een Gelfand-tripel:
+
+	\[
+		\Phi \subset \mathcal{H} \subset \Phi'
+	\]
+
+	waar:
+
+	\begin{itemize}
+		\item $\Phi$ een dichte testfunctieruimte is
+		\item $\Phi'$ de duale ruimte (distributies)
+	\end{itemize}
+
+	De Dirac-delta-eigenvectoren behoren tot $\Phi'$.
+
+	\section*{6. Canonieke Commutatierelaties}
+
+	De impulsoperator op $L^2(\mathbb{R})$ wordt gedefinieerd als:
+
+	\begin{equation}
+		\hat{p} = -i\hbar \frac{d}{dx}
+	\end{equation}
+
+	met domein:
+	\[
+		\mathcal{D}(\hat{p})
+		=
+		\{ \psi \in L^2(\mathbb{R}) :
+		\psi \text{ absoluut continu},
+		\psi' \in L^2 \}.
+	\]
+
+	De canonieke commutatierelatie
+
+	\[
+		[\hat{x},\hat{p}] = i\hbar
+	\]
+
+	geldt enkel op een geschikte gemeenschappelijke kern
+	$\mathcal{D}(\hat{x}\hat{p}) \cap
+	\mathcal{D}(\hat{p}\hat{x})$.
+
+	\section{Tijdsevolutie en Stone's Theorem}
+
+	Volgens Stone’s stelling correspondeert elke sterk-continu
+	éénparameter unitaire groep $U(t)$ met een unieke zelf-adjuncte
+	generator $\hat{H}$:
+
+	\begin{equation}
+		U(t) = e^{-it\hat{H}/\hbar}
+	\end{equation}
+
+	De Schrödingervergelijking volgt als:
+
+	\begin{equation}
+		i\hbar \frac{d}{dt} \psi(t)
+		=
+		\hat{H}\psi(t)
+	\end{equation}
+
+	\section{Onzekerheidsrelatie in Algemene Vorm}
+
+	Voor twee zelf-adjuncte operatoren $\hat{A},\hat{B}$
+	met geschikte gemeenschappelijke domein geldt:
+
+	\begin{equation}
+		\sigma_A^2 \sigma_B^2
+		\ge
+		\frac{1}{4}
+		\left|
+			\langle [\hat{A},\hat{B}] \rangle
+		\right|^2
+		+
+		\frac{1}{4}
+		\left|
+			\langle \{\Delta A,\Delta B\} \rangle
+		\right|^2
+	\end{equation}
+
+	waar $\{\cdot,\cdot\}$ de anticommutator is.
+
 
 	\chapter{De Golffunctie en haar interpretatie van het dubbel-spleet experiment}
 	De golffunctie vormt de hoeksteen van de kwantummechanica. De golffunctie mag niet gezien worden als een klassieke golf, maar eerder als een wiskundige constructie
 	die de waarschijnlijkheid van het vinden van een deeltje op een bepaalde plaats en tijd beschrijft.
 	De golffunctie wordt vaak aangeduid met de Griekse letter $\psi$ en is een complex getal dat kan worden geschreven als $\psi(x,t) = A e^{i\theta}$, waarbij $A$ de amplitude is en $\theta$ de fase.
+	Het is ook belangrijk dat we een formele afbakening maken : we spreken over niet relativistische kwantummechanica, dus we negeren
+	\begin{itemize}
+		\item relativistische effecten en QED-correcties, wat een goede benadering is voor systemen met lage energie en kleine snelheden (zoals het waterstofatoom in de grondtoestand).
+		\item we gebruiken de klassieke ruimt en tijd waarbij we het hebben over absolute tijd en geen ruimtetijd zoals in de relativiteitstheorie.
+		\item We gebruiken de Galilei invariant in plaats van de Lorentz invariant, wat betekent dat we geen rekening houden met de effecten van speciale relativiteit.
+		\item we stipuleren dat de snelheid  $v<<c$ waarmee we zeggen de de lichtsnelheid $c$ geen dynamische parameter is in onze theorie.
+	\end{itemize}
 	Voordat we hier verder gaan, lijkt het me een goed idee om eerst even te herhalen wat de complexe getallen zijn en hoe ze werken,
 	aangezien de golffunctie een complex getal is en het begrijpen van complexe getallen essentieel is voor het begrijpen van de golffunctie en de kwantummechanica in het algemeen.
 	\section{Herhaling: Complexe getallen en hun rol in de quantummechanica}
