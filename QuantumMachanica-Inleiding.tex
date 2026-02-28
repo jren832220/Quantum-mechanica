@@ -40,7 +40,7 @@
 		Er is geen energieverlies door straling zolang het elektron zich in een stationaire baan bevindt.
 		\item Kwantificatie van energie: \\
 		Niet alle banen zijn toegestaan; alleen die banen waarbij het impulsmoment van het elektron een geheel veelvoud is van $\hbar$ (de gereduceerde Planck-constante) zijn toegestaan. Dit wordt uitgedrukt als $L = n\hbar$, waarbij $n$ een positief geheel getal is.\\
-		De energie van een elektron in een stationaire baan is kwantumgequantificeerd en kan worden berekend met behulp van de formule $E_n = -\frac{13.6 \text{ eV}}{n^2}$ voor het waterstofatoom. $n$ is ook hier een geheel getal, ook wel het hoofdkwantumgetal genoemd.
+		De energie van een elektron in een stationaire baan is gekwantificeerd en kan worden berekend met behulp van de formule $E_n = -\frac{13.6 \text{ eV}}{n^2}$ voor het waterstofatoom. $n$ is ook hier een geheel getal, ook wel het hoofdkwantumgetal genoemd.
 		\item Lichtemissie en -absorptie: \\
 		Een elektron kan van de ene stationaire baan naar de andere springen door het absorberen of uitzenden van een foton.
 		De energie van het foton komt overeen met het verschil in energie tussen de twee banen, wat wordt uitgedrukt als $E_{\text{foton}} = E_{\text{hoger}} - E_{\text{lager}}$.
@@ -58,7 +58,7 @@
 		Volgens de klassieke natuurkunde zouden elektronen continu energie moeten verliezen door straling terwijl ze rond de kern draaien, wat zou leiden tot instabiliteit van atomen.
 		\item Het emissiespectrum van waterstof: \\
 		Bohr's model verklaart de discrete lijnen in het emissiespectrum van waterstof, die overeenkomen met de energieverschillen tussen de stationaire banen.
-		\item waarom energiëniveaus van atomen kwantumgequantificeerd zijn: \\
+		\item waarom energieniveaus van atomen gekwantificeerd zijn: \\
 	\end{itemize}
    volgens het waterstofatoom klopt het exact met de experimenten.
 	\section{Het Bohr-model heeft beperkingen}
@@ -329,4 +329,218 @@
 	\end{itemize}
 
 	In het Bohr-model worden deze subtiele kwantumeffecten volledig genegeerd, wat verklaart waarom het model slechts een benadering is van de werkelijkheid.
+	\chapter{Kwantummechanica een nieuwe theorie}
+	\epigraph{“I think I can safely say that nobody understands quantum mechanics.”}{Richard Feynman}
+	De beperkingen van het Bohr-model en de ontdekking van nieuwe experimenten (zoals het dubbel-spleet experiment) leidden tot de ontwikkeling van een nieuwe theorie: de kwantummechanica.
+	Deze theorie, ontwikkeld in de jaren 1920 door wetenschappers zoals Erwin Schrödinger, Werner Heisenberg en Paul Dirac, biedt een fundamenteel andere kijk op de natuur.
+	In plaats van te denken in termen van klassieke banen, beschrijft de kwantummechanica de toestand van een systeem met behulp van een golffunctie ($\psi$), die informatie bevat over de waarschijnlijkheid van het vinden
+	van een deeltje op een bepaalde plaats en tijd. De evolutie van deze golffunctie wordt bepaald door de Schrödingervergelijking, die een fundamentele vergelijking is in de kwantummechanica.
+	Eenvoudig gezegd, de kwantummechanica vervangt het deterministische beeld van de klassieke natuurkunde door een probabilistisch beeld, waarin de uitkomst van metingen niet met absolute zekerheid kan worden voorspeld, maar alleen in termen van waarschijnlijkheden.
+	Deze nieuwe theorie heeft niet alleen de beperkingen van het Bohr-model overwonnen, maar heeft ook geleid tot een dieper begrip van de natuur en heeft talloze toepassingen in de moderne technologie, zoals in de ontwikkeling van halfgeleiders, lasers en kwantumcomputers.
+	Het is belangrijk om te vermelden dat aan het zogeheten correspondentie pricipe volledig voldaan wordt: voor grote $n$ (en dus grote banen) benadert het Bohr-model de resultaten van de kwantummechanica,
+	wat aantoont dat de klassieke natuurkunde een goede benadering is van de kwantummechanica in het macroscopische regime.
+    Laten we maar direct van start gaan en beginnen met de golffunctie en het dubbel-spleet experiment,
+	dat een van de meest iconische experimenten is in de geschiedenis van de kwantummechanica en een cruciale rol heeft gespeeld in het begrijpen van de aard van deeltjes en golven.
+
+	\chapter{De Golffunctie en haar interpretatie van het dubbel-spleet experiment}
+	De golffunctie vormt de hoeksteen van de kwantummechanica. De golffunctie mag niet gezien worden als een klassieke golf, maar eerder als een wiskundige constructie
+	die de waarschijnlijkheid van het vinden van een deeltje op een bepaalde plaats en tijd beschrijft.
+	De golffunctie wordt vaak aangeduid met de Griekse letter $\psi$ en is een complex getal dat kan worden geschreven als $\psi(x,t) = A e^{i\theta}$, waarbij $A$ de amplitude is en $\theta$ de fase.
+	Voordat we hier verder gaan, lijkt het me een goed idee om eerst even te herhalen wat de complexe getallen zijn en hoe ze werken,
+	aangezien de golffunctie een complex getal is en het begrijpen van complexe getallen essentieel is voor het begrijpen van de golffunctie en de kwantummechanica in het algemeen.
+	\section{Herhaling: Complexe getallen en hun rol in de quantummechanica}
+
+	\subsection{Definitie van complexe getallen}
+
+	Een complex getal wordt gedefinieerd als een element van de verzameling
+
+	\[
+		\mathbb{C} = \{ z = x + iy \mid x,y \in \mathbb{R} \}
+	\]
+
+	waarbij:
+	\begin{itemize}
+		\item $x = \mathrm{Re}(z)$ het reële deel is,
+		\item $y = \mathrm{Im}(z)$ het imaginaire deel is,
+		\item $i$ de imaginaire eenheid is met eigenschap
+		\[
+			i^2 = -1.
+		\]
+	\end{itemize}
+
+	De verzameling $\mathbb{C}$ vormt een lichaam (veld) onder de gebruikelijke optelling en vermenigvuldiging.
+
+	\subsection{Rekenregels}
+
+	Voor twee complexe getallen $z_1 = x_1 + iy_1$ en $z_2 = x_2 + iy_2$ geldt:
+
+	\paragraph{Optelling}
+	\[
+		z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2)
+	\]
+
+	\paragraph{Vermenigvuldiging}
+	\[
+		z_1 z_2 = (x_1x_2 - y_1y_2) + i(x_1y_2 + x_2y_1)
+	\]
+
+	\subsection{Complex geconjugeerde en modulus}
+
+	De complexe geconjugeerde van $z = x + iy$ is gedefinieerd als:
+
+	\[
+		z^* = x - iy
+	\]
+
+	Belangrijke eigenschap:
+
+	\[
+		z z^* = x^2 + y^2
+	\]
+
+	De modulus (of absolute waarde) van $z$ wordt gedefinieerd als:
+
+	\[
+		|z| = \sqrt{z z^*} = \sqrt{x^2 + y^2}
+	\]
+
+	In de quantummechanica speelt dit een fundamentele rol omdat de kansdichtheid gegeven wordt door:
+
+	\[
+		|\psi(x,t)|^2 = \psi^*(x,t)\psi(x,t)
+	\]
+
+	\subsection{Geometrische interpretatie}
+
+	Complexe getallen kunnen geïnterpreteerd worden als punten in het complexe vlak (Argand-diagram), waarbij:
+
+	\[
+		z = x + iy \leftrightarrow (x,y)
+	\]
+
+	De modulus is de afstand tot de oorsprong:
+
+	\[
+		r = |z|
+	\]
+
+	en het argument $\theta$ wordt gedefinieerd via:
+
+	\[
+		\theta = \arctan\left(\frac{y}{x}\right)
+	\]
+
+	\subsection{Poolcoördinaten en exponentiële vorm}
+
+	Een complex getal kan geschreven worden in poolvorm:
+
+	\[
+		z = r(\cos\theta + i\sin\theta)
+	\]
+
+	Met de formule van Euler:
+
+	\[
+		e^{i\theta} = \cos\theta + i\sin\theta
+	\]
+
+	kan men schrijven:
+
+	\[
+		z = r e^{i\theta}
+	\]
+
+	Dit is de meest natuurlijke representatie in de quantummechanica.
+
+	\subsection{Eigenschappen van de exponentiële vorm}
+
+	Voor twee complexe getallen:
+
+	\[
+		z_1 = r_1 e^{i\theta_1}, \quad z_2 = r_2 e^{i\theta_2}
+	\]
+
+	geldt:
+
+	\[
+		z_1 z_2 = r_1 r_2 e^{i(\theta_1+\theta_2)}
+	\]
+
+	\[
+		\frac{z_1}{z_2} = \frac{r_1}{r_2} e^{i(\theta_1-\theta_2)}
+	\]
+
+	Vermenigvuldigen van complexe getallen komt dus overeen met:
+	\begin{itemize}
+		\item vermenigvuldigen van de moduli,
+		\item optellen van de fasen.
+	\end{itemize}
+
+	Dit verklaart interferentie-effecten in de quantummechanica.
+
+	\subsection{Complexe differentieerbaarheid}
+
+	In de quantummechanica werken we met complexe functies:
+
+	\[
+		\psi : \mathbb{R}^n \times \mathbb{R} \to \mathbb{C}
+	\]
+
+	De afgeleide wordt componentgewijs gedefinieerd:
+
+	\[
+		\frac{\partial \psi}{\partial x}
+		=
+		\frac{\partial}{\partial x}(\mathrm{Re}\,\psi)
+		+
+		i
+		\frac{\partial}{\partial x}(\mathrm{Im}\,\psi)
+	\]
+
+	Voor vlakke golven geldt bijvoorbeeld:
+
+	\[
+		\psi(x,t) = Ae^{i(kx-\omega t)}
+	\]
+
+	waarbij:
+
+	\[
+		\frac{\partial \psi}{\partial x} = ik\psi,
+		\quad
+		\frac{\partial \psi}{\partial t} = -i\omega\psi.
+	\]
+
+	Dit is precies de reden waarom de impuls- en energie-operatoren in de quantummechanica worden gedefinieerd als:
+
+	\[
+		\hat{p} = -i\hbar \frac{\partial}{\partial x}
+	\]
+
+	\[
+		\hat{E} = i\hbar \frac{\partial}{\partial t}
+	\]
+
+	\subsection{Lineaire structuur}
+
+	De verzameling complexe functies vormt een complexe vectorruimte. Indien $\psi_1$ en $\psi_2$ oplossingen zijn van de Schrödingervergelijking, dan is ook:
+
+	\[
+		\alpha \psi_1 + \beta \psi_2
+	\]
+
+	met $\alpha,\beta \in \mathbb{C}$ opnieuw een oplossing (superpositieprincipe).
+
+	\subsection{Waarom complexe getallen fundamenteel zijn}
+
+	De kernredenen waarom complexe getallen essentieel zijn in de quantummechanica:
+
+	\begin{enumerate}
+		\item De Schrödingervergelijking bevat expliciet de factor $i$.
+		\item Interferentie vereist fase-informatie.
+		\item Probabiliteiten worden gegeven door $|\psi|^2$, wat positieve reële getallen oplevert.
+		\item Unitaire tijdsevolutie vereist complexe Hilbertruimten.
+	\end{enumerate}
+
+	Zonder complexe getallen zou de lineaire, unitaire structuur van de quantummechanica niet mogelijk zijn.
 \end{document}
