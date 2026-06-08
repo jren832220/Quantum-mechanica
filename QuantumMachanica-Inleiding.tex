@@ -736,4 +736,218 @@
 	\end{enumerate}
 
 	Zonder complexe getallen zou de lineaire, unitaire structuur van de quantummechanica niet mogelijk zijn.
+
+
+	\chapter{De Schrödingervergelijking: dynamica van de golffunctie}
+	De tijdafhankelijke Schrödingervergelijking is de fundamentele vergelijking die de evolutie van de golffunctie $\psi(x,t)$ beschrijft:
+	\[
+		i\hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \psi + V(x)\psi.
+	\]
+	Deze vergelijking is een partiële differentiaalvergelijking van de eerste orde in tijd en tweede orde in ruimte. Hierin is:
+	\begin{itemize}
+		\item $i$ de imaginaire eenheid,
+		\item $\hbar$ de gereduceerde Planck-constante,
+		\item $m$ de massa van het deeltje,
+		\item $\nabla^2$ de Laplace-operator, die de ruimtelijke tweede afgeleide van $\psi$ geeft,
+		\item $V(x)$ de potentiële energie als functie van de positie $x$.
+	\end{itemize}
+	De Schrödingervergelijking kan worden afgeleid vanuit de energie-operator (Hamiltoniaan) en de tijdsevolutie van toestanden in de quantummechanica.
+	De oplossing van deze vergelijking geeft de golffunctie $\psi(x,t)$, die alle informatie bevat over het systeem op tijd $t$.
+	Hoewel de golffunctie $\psi(x,t)$ zelf een complex getal is en daardoor niet direct meetbaar is, bezit het kwadraat van de absolute waarde ervan een diepe fysische betekenis.
+	Volgens de Born-interpretatie representeert $|\psi(x,t)|^2$ de waarschijnlijkheidsdichtheid om het deeltje op tijdstip $t$ op positie $x$ aan te treffen.
+	De Schrödingervergelijking dicteert dus niet het exacte pad van een deeltje — zoals de wetten van Newton dat doen in de klassieke mechanica —
+	maar beschrijft hoe deze kansgolven zich door de ruimte voortplanten.
+	Dit markeert de fundamentele overstap van deterministische banen naar probabilistische toestanden.
+
+	In dit hoofdstuk zullen we de dynamica van deze golffunctie in detail bestuderen.
+	We beginnen met de overgang van klassieke energie naar kwantumoperatoren, dan gaan we het hebben over de tijdsafhankelijke Schrödingervergelijking, om het dan te hebben over
+	het conceptualiseren van de Hamilton-operator $\hat{H}$, waarmee we de Schrödingervergelijking compacter kunnen schrijven als $i\hbar \frac{\partial}{\partial t}\psi = \hat{H}\psi$.
+
+	Vervolgens introduceren we de techniek van \textit{scheiding van variabelen}.
+	Dit stelt ons in staat om de tijdafhankelijke vergelijking te splitsen in een tijdonafhankelijk deel en een tijdsafhankelijk deel.
+	Dit leidt tot het concept van \textit{stationaire toestanden}: toestanden waarbij de waarschijnlijkheidsdichtheid constant blijft in de tijd,
+	maar de fase van de golffunctie wel evolueert.
+	Tot slot zullen we kijken naar de behoudswet van waarschijnlijkheid en hoe de golffunctie zich gedraagt onder invloed van verschillende potentiaallandschappen $V(x)$.
+
+	\section{Van klassieke energie naar kwantumoperatoren}
+	In de klassieke mechanica wordt de totale energie van een deeltje gegeven door de Hamiltoniaan:
+	\[
+	H = \frac{p^2}{2m} + V(x),
+	\]
+	waar $p$ de impuls is en $V(x)$ de potentiële energie. In de kwantummechanica wordt deze Hamiltoniaan omgezet in een operator $\hat{H}$ die werkt op de golffunctie $\psi(x,t)$.
+	De impuls $p$ wordt vervangen door de impulsoperator $\hat{p} = -i\hbar \frac{\partial}{\partial x}$, en de Hamiltoniaan wordt:
+	\[
+	\hat{H} = -\frac{\hbar^2}{2m} \nabla^2 + V(x).
+	\]
+	Deze operator $\hat{H}$ wordt de Hamilton-operator genoemd en speelt een centrale rol in de dynamica van het systeem.
+	De tijdafhankelijke Schrödingervergelijking kan
+	nu compact worden geschreven als:
+	\[
+	i\hbar \frac{\partial \psi}{\partial t} = \hat{H}\psi.
+	\]
+	\subsection{Motivatie voor de operatorvervangingen}
+
+	De overgang van klassieke mechanica naar kwantummechanica bestaat niet enkel
+	uit het formeel vervangen van grootheden door operatoren. De operatoren voor
+	impuls en energie worden gemotiveerd door de golfachtige aard van materie.
+
+	Voor een vrij deeltje met scherp bepaalde impuls en energie gebruiken we een
+	vlakke golf van de vorm
+	\[
+		\psi(x,t)=Ae^{i(kx-\omega t)}.
+	\]
+	Deze formule beschrijft een vlakke materiegolf met constante amplitude $A$ en
+	een fase $kx-\omega t$, waarbij $k$ het golfgetal en $\omega$ de hoekfrequentie is.
+
+	Volgens de relaties van de Broglie en Planck-Einstein geldt:
+	\[
+		p=\hbar k,
+		\qquad
+		E=\hbar\omega.
+	\]
+    Voor de duidelijkheid leggen we hier nog even uit wat deze relaties betekenen:
+	\begin{itemize}
+		\item De relatie \(p = \hbar k\) verbindt de impuls \(p\) van een deeltje met het golfgetal \(k\) van de bijbehorende golffunctie. Het geeft aan dat de impuls van een deeltje evenredig is aan het aantal golven per eenheid lengte (golfgetal).
+		\item De relatie \(E = \hbar \omega\) verbindt de energie \(E\) van een deeltje met de hoekfrequentie \(\omega\) van de golffunctie. Het geeft aan dat de energie van een deeltje evenredig is aan hoe snel de fase van de golffunctie verandert in de tijd.
+	\end{itemize}
+
+	Beschouwen we nu de ruimtelijke afgeleide van deze golffunctie, dan vinden we:
+	\[
+		\frac{\partial \psi}{\partial x}
+		=
+		ik\psi.
+	\]
+	Vermenigvuldigen we beide zijden met \(-i\hbar\), dan krijgen we:
+	\[
+		-i\hbar \frac{\partial \psi}{\partial x}
+		=
+		\hbar k \psi
+		=
+		p\psi.
+	\]
+	Hieruit volgt dat de operator
+	\[
+		\hat{p}=-i\hbar \frac{\partial}{\partial x}
+	\]
+	de golffunctie vermenigvuldigt met de impulswaarde \(p\), wanneer \(\psi\) een
+	vlakke golf is. In die zin is een vlakke golf een eigentoestand van de
+	impulsoperator:
+	\[
+		\hat{p}\psi=p\psi.
+	\]
+
+	Op analoge wijze bekijken we de tijdsafgeleide:
+	\[
+		\frac{\partial \psi}{\partial t}
+		=
+		-i\omega\psi.
+	\]
+	Vermenigvuldigen met \(i\hbar\) geeft:
+	\[
+		i\hbar\frac{\partial \psi}{\partial t}
+		=
+		\hbar\omega\psi
+		=
+		E\psi.
+	\]
+	Daarom definiëren we de energieoperator als
+	\[
+		\hat{E}=i\hbar\frac{\partial}{\partial t}.
+	\]
+
+	De operatorvervangingen
+	\[
+		p \longrightarrow \hat{p}=-i\hbar\frac{\partial}{\partial x},
+		\qquad
+		E \longrightarrow \hat{E}=i\hbar\frac{\partial}{\partial t}
+	\]
+	zijn dus niet willekeurig. Ze drukken uit dat impuls en energie verbonden zijn
+	met respectievelijk ruimtelijke en temporele variatie van de fase van de
+	golffunctie.
+
+	
+	\subsection{Van de klassieke Hamiltoniaan naar de Schrödingervergelijking}
+
+	In één dimensie is de klassieke Hamiltoniaan
+	\[
+		H=\frac{p^2}{2m}+V(x).
+	\]
+	Na de vervanging
+	\[
+		p \longrightarrow \hat{p}=-i\hbar\frac{\partial}{\partial x}
+	\]
+	wordt de kinetische term:
+	\[
+		\frac{p^2}{2m}
+		\longrightarrow
+		\frac{\hat{p}^{\,2}}{2m}.
+	\]
+	Omdat
+	\[
+		\hat{p}^{\,2}
+		=
+		\left(-i\hbar\frac{\partial}{\partial x}\right)^2
+		=
+		-\hbar^2\frac{\partial^2}{\partial x^2},
+	\]
+	krijgen we:
+	\[
+		\hat{H}
+		=
+		-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}
+		+
+		V(x).
+	\]
+
+	De tijdsafhankelijke Schrödingervergelijking volgt dan uit de identificatie
+	\[
+		\hat{E}\psi=\hat{H}\psi.
+	\]
+	Aangezien
+	\[
+		\hat{E}=i\hbar\frac{\partial}{\partial t},
+	\]
+	vinden we:
+	\[
+		i\hbar\frac{\partial \psi(x,t)}{\partial t}
+		=
+		\left(
+			-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}
+			+
+			V(x)
+		\right)\psi(x,t).
+	\]
+
+	In drie ruimtelijke dimensies wordt de tweede afgeleide vervangen door de
+	Laplaciaan:
+	\[
+		\nabla^2
+		=
+		\frac{\partial^2}{\partial x^2}
+		+
+		\frac{\partial^2}{\partial y^2}
+		+
+		\frac{\partial^2}{\partial z^2}.
+	\]
+	De Hamilton-operator wordt dan:
+	\[
+		\hat{H}
+		=
+		-\frac{\hbar^2}{2m}\nabla^2
+		+
+		V(\mathbf{r}),
+	\]
+	en de Schrödingervergelijking krijgt de algemene vorm:
+	\[
+		i\hbar\frac{\partial \psi(\mathbf{r},t)}{\partial t}
+		=
+		\left(
+			-\frac{\hbar^2}{2m}\nabla^2
+		+
+		V(\mathbf{r})
+		\right)\psi(\mathbf{r},t).
+	\]
+	In woorden: de verandering van de golffunctie in de tijd wordt bepaald door de
+	totale energie-operator, die bestaat uit een kinetische term
+	$-\frac{\hbar^2}{2m}\nabla^2$ en de potenti\"ele energie $V(\mathbf{r})$.
 \end{document}
