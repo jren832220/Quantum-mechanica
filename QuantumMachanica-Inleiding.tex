@@ -14,940 +14,1324 @@
 \date{}
 
 \begin{document}
-	\maketitle
-	\tableofcontents
-	\begin{abstract}
-		Dit document biedt een kritische inleiding tot de overgang van de klassieke natuurkunde naar de moderne kwantummechanica, met een specifieke focus op de evolutie van atoommodellen. Centraal staat het atoommodel van Bohr, dat een revolutionaire stap betekende door de introductie van kwantisering in de atomaire structuur. 
-		
-		De kern van deze verhandeling analyseert de drie postulaten van Bohr:
-		\begin{enumerate}
-			\item De existentie van stationaire banen waarin elektronen geen straling uitzenden.
-			\item De voorwaarde voor kwantisering van het impulsmoment: $L = n\hbar$.
-			\item De frequentievoorwaarde bij elektronenovergangen tussen energieniveaus.
-		\end{enumerate}
-		
-		Hoewel het model van Bohr succesvol de spectraallijnen van waterstof verklaarde, worden de fundamentele beperkingen ervan besproken, zoals het onvermogen om spectra van complexere atomen te voorspellen en het negeren van de golf-deeltje dualiteit. Tot slot wordt uiteengezet hoe deze tekortkomingen de noodzaak creëerden voor het kwantummechanisch atoommodel van Schrödinger. Hierbij verschuift het paradigma van deterministische banen naar de probabilistische benadering van de golffunctie ($\psi$), gebaseerd op de fundamentele Schrödingervergelijking.
-	\end{abstract}
-	
-	\chapter{Het atoommodel van Bohr}
-	\epigraph{“The more success the quantum theory has, the sillier it looks.”}{Albert Einstein}
-
-	Het atoommodel van Bohr, geïntroduceerd in 1913, was een baanbrekende stap in de ontwikkeling van de kwantummechanica.
-	Het gaf ons een eerste inzicht in de structuur van het atoom en de manier waarop elektronen zich gedragen.
-	Bohr stelde drie postulaten voor die de structuur van het atoom beschrijven:
-	\begin{itemize}
-		\item Elektronen mogen alleen bewegen in bepaalde banen (schillen) rond de kern.
-		Deze banen hebben een vaste energie en worden stationaire banen genoemd.
-		Er is geen energieverlies door straling zolang het elektron zich in een stationaire baan bevindt.
-		\item Kwantificatie van energie: \\
-		Niet alle banen zijn toegestaan; alleen die banen waarbij het impulsmoment van het elektron een geheel veelvoud is van $\hbar$ (de gereduceerde Planck-constante) zijn toegestaan. Dit wordt uitgedrukt als $L = n\hbar$, waarbij $n$ een positief geheel getal is.\\
-		De energie van een elektron in een stationaire baan is gekwantificeerd en kan worden berekend met behulp van de formule $E_n = -\frac{13.6 \text{ eV}}{n^2}$ voor het waterstofatoom. $n$ is ook hier een geheel getal, ook wel het hoofdkwantumgetal genoemd.
-		\item Lichtemissie en -absorptie: \\
-		Een elektron kan van de ene stationaire baan naar de andere springen door het absorberen of uitzenden van een foton.
-		De energie van het foton komt overeen met het verschil in energie tussen de twee banen, wat wordt uitgedrukt als $E_{\text{foton}} = E_{\text{hoger}} - E_{\text{lager}}$.
-		Een elektron zendt licht uit wanneer het van een hogere naar een lagere baan springt, en absorbeert licht wanneer het van een lagere naar een hogere baan springt.
-		De energie van het foton kan ook worden uitgedrukt in termen van de frequentie van het licht: $E_{\text{foton}} = h\nu$, waarbij $h$ de Planck-constante is en $\nu$ de frequentie van het licht.
-		De Planck-constante is een fundamentele constante in de natuurkunde die de kwantisering van energie en impulsmoment beschrijft en heeft een waarde van ongeveer $6.626 \times 10^{-34}$ joule-seconden.
-		De frequentie van het licht is gerelateerd aan de golflengte door de formule $\nu = \frac{c}{\lambda}$, waarbij $c$ de snelheid van het licht is en $\lambda$ de golflengte van het licht.
-		Hoe hoger de energie van het foton, hoe hoger de frequentie en hoe korter de golflengte van het licht. Hoe lager de energie van het foton, hoe lager de frequentie en hoe langer de golflengte van het licht.
-		Hoe hoger de frequentie van het licht, hoe meer energie het foton heeft. Hoe lager de frequentie van het licht, hoe minder energie het foton heeft. Zo hebben de kleuren rood en oranje een lagere frequentie en minder energie dan de kleuren blauw en violet.
-	\end{itemize}
-	\section{Waarom werkt het model van Bohr?}
-	Het model van Bohr verklaart:
-	\begin{itemize}
-		\item De stabiliteit van atomen: \\
-		Volgens de klassieke natuurkunde zouden elektronen continu energie moeten verliezen door straling terwijl ze rond de kern draaien, wat zou leiden tot instabiliteit van atomen.
-		\item Het emissiespectrum van waterstof: \\
-		Bohr's model verklaart de discrete lijnen in het emissiespectrum van waterstof, die overeenkomen met de energieverschillen tussen de stationaire banen.
-		\item waarom energieniveaus van atomen gekwantificeerd zijn: \\
-	\end{itemize}
-   volgens het waterstofatoom klopt het exact met de experimenten.
-	\section{Het Bohr-model heeft beperkingen}
-	Hoewel het model van Bohr succesvol was in het verklaren van het gedrag van het waterstofatoom, heeft het verschillende beperkingen:
-	\begin{itemize}
-		\item Het model kan niet de spectra van complexere atomen verklaren, zoals helium of lithium, omdat het geen rekening houdt met de interacties tussen meerdere elektronen.
-		\item Het model negeert de golf-deeltje dualiteit van elektronen, wat later werd erkend als een fundamenteel aspect van de kwantummechanica.
-		\item Het model is niet in staat om de fijne structuur van spectraallijnen te verklaren, die wordt veroorzaakt door relativistische effecten en de spin van elektronen.
-		\item elektronen bewegen niet echt in cirkelvormige banen, maar hebben een meer complexe beweging die beter wordt beschreven door de golffunctie in de Schrödingervergelijking.
-	\end{itemize}
-	Daarom zal het later ook vervangen worden door het kwantummechanisch atoommodel van Schrödinger, dat een meer nauwkeurige en uitgebreide beschrijving biedt van de structuur en het gedrag van atomen.
-	\chapter{Het atoommodel van Bohr wiskundig gezien}
-	Nu we de postulaten van Bohr hebben besproken, kunnen we deze wiskundig formuleren en analyseren. \\
-	We beginnen met een herhaling van de zaken die we in het vorige hoofdstuk hebben besproken:
-	\section{Postulaten (Bohr, 1913)}
-	Bohr introduceerde (in moderne notatie) de volgende kernidee\"en voor het waterstofachtige atoom (kernlading $+Ze$ en \'e\'en elektron):
-	\begin{enumerate}
-		\item Het elektron kan zich enkel in \emph{stationaire banen} bevinden zonder straling uit te zenden.
-		\item Enkel bij een overgang $n\to m$ wordt straling uitgezonden/geabsorbeerd met
-		\[
-			h\nu = E_n - E_m.
-		\]
-		\item De baanimpuls is gequantiseerd:
-		\[
-			L = m_e v r = n\hbar,\qquad n\in\mathbb{N}.
-		\]
-	\end{enumerate}
-	\section{Dynamica: Coulombkracht als centripetale kracht}
-	Neem een cirkelbaan met straal $r$ en snelheid $v$. De Coulombkracht levert de centripetale kracht:
-	\begin{align}
-		\frac{m_e v^2}{r} &= \frac{1}{4\pi\varepsilon_0}\frac{Z e^2}{r^2}.
-		\label{eq:coulomb_centripetaal}
-	\end{align}
-	De uitkomst wordt uitgedrukt in Newton (N)\\
-
-	Definieer voor compactheid
-	\[
-		k \equiv \frac{1}{4\pi\varepsilon_0}.
-	\]
-	Dan wordt \eqref{eq:coulomb_centripetaal}
-	\begin{align}
-		m_e v^2 &= \frac{k Z e^2}{r}.
-		\label{eq:mv2}
-	\end{align}
-
-	e is de elementaire lading en wordt uitgedrukt in Coulomb (C)\\
-	$\varepsilon_0$ is de permittiviteit van het vacuüm en wordt uitgedrukt in Farad per meter (F/m)\\
-	r is de afstand van het elektron tot de kern en wordt uitgedrukt in meter (m)\\
-	$m_e$ is de massa van het elektron en wordt uitgedrukt in kilogram (kg)\\
-	v is de snelheid van het elektron en wordt uitgedrukt in meter per seconde (m/s)\\
-	\section{Quantisatie van het impulsmoment en straal van de banen}
-	Uit $L=m_e v r = n\hbar$ volgt
-	\begin{align}
-		v &= \frac{n\hbar}{m_e r}.
-		\label{eq:v_from_L}
-	\end{align}
-	Combineer \eqref{eq:mv2} en \eqref{eq:v_from_L}:
-	\begin{align}
-		m_e\left(\frac{n\hbar}{m_e r}\right)^2 &= \frac{k Z e^2}{r}
-		\\
-		\frac{n^2\hbar^2}{m_e r^2} &= \frac{k Z e^2}{r}
-		\\
-		r_n &= \frac{n^2\hbar^2}{m_e k Z e^2}.
-		\label{eq:bohr_radius_general}
-	\end{align}
-	Voor $Z=1$ definieert men de \emph{Bohrstraal}
-	\begin{align}
-		a_0 \equiv \frac{\hbar^2}{m_e k e^2} = \frac{4\pi\varepsilon_0\hbar^2}{m_e e^2},
-	\end{align}
-	zodat
-	\begin{align}
-		r_n = \frac{n^2}{Z}\,a_0.
-	\end{align}
-	waarbij $\hbar$ de gereduceerde Planck-constante is,
-	$m_e$ de massa van het elektron,
-	$k$ de constante gedefinieerd als $\frac{1}{4\pi\varepsilon_0}$, $Z$ de kernlading,
-	en $e$ de elementaire lading. De Bohrstraal
-	$a_0$ is een fundamentele lengte-eenheid in de atoomfysica en heeft een waarde van ongeveer 0.529 Ångström (Å), wat overeenkomt met de straal van de grondtoestand van het waterstofatoom.
-	\section{Snelheden en de fijnstructuurconstante}
-	Uit \eqref{eq:mv2} en \eqref{eq:bohr_radius_general} volgt ook een eenvoudige uitdrukking voor $v_n$.
-	Gebruik \eqref{eq:v_from_L} met $r=r_n$:
-	\begin{align}
-		v_n &= \frac{n\hbar}{m_e r_n}
-		= \frac{n\hbar}{m_e}\,\frac{m_e k Z e^2}{n^2\hbar^2}
-		= \frac{k Z e^2}{n\hbar}.
-	\end{align}
-	Met $\alpha$ de fijnstructuurconstante,
-	\[
-		\alpha \equiv \frac{e^2}{4\pi\varepsilon_0\hbar c} = \frac{k e^2}{\hbar c},
-	\]
-	krijg je
-	\begin{align}
-		\frac{v_n}{c} = \frac{Z\alpha}{n}.
-	\end{align}
-	Dit toont meteen de \emph{consistentievoorwaarde} voor een niet-relativistische behandeling: $Z\alpha/n\ll 1$.
-\\
-	waarbij:\\
-	$v_n$ de snelheid van het elektron in baan $n$ is en wordt uitgedrukt in meter per seconde (m/s)\\
-	$n$ het hoofdkwantumgetal is (een positief geheel getal)\\
-	$\hbar$ de gereduceerde Planck-constante is ($\hbar = h/2\pi \approx 1.055 \times 10^{-34}$ J·s)\\
-	$m_e$ de massa van het elektron is ($\approx 9.109 \times 10^{-31}$ kg)\\
-	$r_n$ de straal van de $n$-de baan is en wordt uitgedrukt in meter (m)\\
-	$k$ de constante is gedefinieerd als $\frac{1}{4\pi\varepsilon_0}$ ($\approx 8.988 \times 10^9$ N·m²/C²)\\
-	$Z$ de kernlading is (het aantal protonen in de kern)\\
-	$e$ de elementaire lading is ($\approx 1.602 \times 10^{-19}$ C)\\
-	$\alpha$ de fijnstructuurconstante is, een dimensieloze natuurconstante ($\alpha \approx 1/137 \approx 0.0073$)\\
-	$\varepsilon_0$ de permittiviteit van het vacuüm is ($\approx 8.854 \times 10^{-12}$ F/m)\\
-	$c$ de lichtsnelheid in vacuüm is ($\approx 2.998 \times 10^8$ m/s)\\
-
-	\section{Energieën van de stationaire toestanden}
-	De totale mechanische energie is
-	\[
-		E = T + V,
-	\]
-	met kinetische energie $T=\frac12 m_e v^2$ en potenti\"ele energie
-	\[
-		V(r) = -k\frac{Z e^2}{r}.
-	\]
-	Gebruik \eqref{eq:mv2}: $m_e v^2 = \frac{k Z e^2}{r}$, dus
-	\begin{align}
-		T &= \frac12\,\frac{k Z e^2}{r},
-		\\
-		E &= \frac12\,\frac{k Z e^2}{r} - \frac{k Z e^2}{r}
-		= -\frac12\,\frac{k Z e^2}{r}.
-		\label{eq:E_vs_r}
-	\end{align}
-	Invullen van $r=r_n$ uit \eqref{eq:bohr_radius_general} geeft
-	\begin{align}
-		E_n
-		&= -\frac12\,\frac{k Z e^2}{r_n}
-		= -\frac12\,k Z e^2\left(\frac{m_e k Z e^2}{n^2\hbar^2}\right)
-		\\
-		&= -\frac{m_e k^2 Z^2 e^4}{2\hbar^2}\,\frac{1}{n^2}.
-		\label{eq:bohr_energy_general}
-	\end{align}
-	Voor waterstof ($Z=1$) is
-	\[
-		E_n = -\frac{m_e k^2 e^4}{2\hbar^2}\frac{1}{n^2}
-		\approx -\frac{13.6\,\mathrm{eV}}{n^2}.
-	\]
-
-	voor de volledigheid geven we hier ook de betekenis van de symbolen die in deze formules voorkomen:
-	waarbij:\\
-	$E$ de totale mechanische energie is en wordt uitgedrukt in joule (J) of elektronvolt (eV)\\
-	$T$ de kinetische energie is (bewegingsenergie van het elektron) en wordt uitgedrukt in joule (J)\\
-	$V$ de potentiële energie is (elektrische energie door Coulombkracht) en wordt uitgedrukt in joule (J)\\
-	$m_e$ de massa van het elektron is ($\approx 9.109 \times 10^{-31}$ kg)\\
-	$v$ de snelheid van het elektron is en wordt uitgedrukt in meter per seconde (m/s)\\
-	$k$ de constante is gedefinieerd als $\frac{1}{4\pi\varepsilon_0}$ ($\approx 8.988 \times 10^9$ N·m²/C²)\\
-	$Z$ de kernlading is (het aantal protonen in de kern)\\
-	$e$ de elementaire lading is ($\approx 1.602 \times 10^{-19}$ C)\\
-	$r$ de afstand van het elektron tot de kern is en wordt uitgedrukt in meter (m)\\
-	$E_n$ de energie van het elektron in de $n$-de stationaire baan is\\
-	$r_n$ de straal van de $n$-de baan is en wordt uitgedrukt in meter (m)\\
-	$n$ het hoofdkwantumgetal is (een positief geheel getal: $n = 1, 2, 3, \ldots$)\\
-	$\hbar$ de gereduceerde Planck-constante is ($\hbar = h/2\pi \approx 1.055 \times 10^{-34}$ J·s)\\
-	eV elektronvolt is, een energie-eenheid (1 eV $\approx 1.602 \times 10^{-19}$ J)\\
-	\\
-	De negatieve waarde van $E_n$ geeft aan dat het elektron gebonden is aan de kern. Hoe negatiever de energie, hoe sterker het elektron gebonden is. Bij $E = 0$ is het elektron vrij (geïoniseerd).
-
-	\subsection{Spectrale lijnen: Rydberg-formule}
-	Bij een overgang $n\to m$ ($n>m$) geldt Bohrs frequentievoorwaarde
-	\[
-		h\nu = E_n - E_m.
-	\]
-	Met \eqref{eq:bohr_energy_general}:
-	\begin{align}
-		h\nu
-		&= \frac{m_e k^2 Z^2 e^4}{2\hbar^2}\left(\frac{1}{m^2}-\frac{1}{n^2}\right).
-	\end{align}
-	Gebruik $\nu=c/\lambda$ en $h=2\pi\hbar$:
-	\begin{align}
-		\frac{1}{\lambda}
-		&= \frac{\nu}{c}
-		= \frac{m_e k^2 Z^2 e^4}{2\hbar^2}\,\frac{1}{h c}\left(\frac{1}{m^2}-\frac{1}{n^2}\right)
-		\\
-		&= \left[\frac{m_e k^2 e^4}{4\pi\hbar^3 c}\right] Z^2
-		\left(\frac{1}{m^2}-\frac{1}{n^2}\right).
-	\end{align}
-	De factor tussen vierkante haken definieert de \emph{Rydberg-constante} (in deze eenvoudige versie met $m_e$):
-	\begin{align}
-		R_\infty \equiv \frac{m_e k^2 e^4}{4\pi\hbar^3 c}
-		= \frac{m_e e^4}{8\varepsilon_0^2 h^3 c}.
-	\end{align}
-	Dan volgt de klassieke Rydberg-formule:
-	\begin{align}
-		\frac{1}{\lambda} = R_\infty Z^2\left(\frac{1}{m^2}-\frac{1}{n^2}\right).
-	\end{align}
-
-	waarbij:\\
-	$h$ de Planck-constante is ($h \approx 6.626 \times 10^{-34}$ J·s)\\
-	$\nu$ de frequentie van het uitgezonden of geabsorbeerde licht is en wordt uitgedrukt in hertz (Hz of s$^{-1}$)\\
-	$E_n$ de energie van het elektron in de $n$-de stationaire baan is\\
-	$E_m$ de energie van het elektron in de $m$-de stationaire baan is\\
-	$n$ het hogere energieniveau is (positief geheel getal, $n > m$)\\
-	$m$ het lagere energieniveau is (positief geheel getal)\\
-	$m_e$ de massa van het elektron is ($\approx 9.109 \times 10^{-31}$ kg)\\
-	$k$ de constante is gedefinieerd als $\frac{1}{4\pi\varepsilon_0}$ ($\approx 8.988 \times 10^9$ N·m²/C²)\\
-	$Z$ de kernlading is (het aantal protonen in de kern)\\
-	$e$ de elementaire lading is ($\approx 1.602 \times 10^{-19}$ C)\\
-	$\hbar$ de gereduceerde Planck-constante is ($\hbar = h/2\pi \approx 1.055 \times 10^{-34}$ J·s)\\
-	$c$ de lichtsnelheid in vacuüm is ($\approx 2.998 \times 10^8$ m/s)\\
-	$\lambda$ de golflengte van het uitgezonden of geabsorbeerde licht is en wordt uitgedrukt in meter (m)\\
-	$R_\infty$ de Rydberg-constante is ($R_\infty \approx 1.097 \times 10^7$ m$^{-1}$)\\
-	$\varepsilon_0$ de permittiviteit van het vacuüm is ($\approx 8.854 \times 10^{-12}$ F/m)\\
-	\\
-	De Rydberg-formule voorspelt de golflengtes van de spectrale lijnen die een waterstofachtig atoom uitzendt. Voor waterstof ($Z=1$) verklaart deze formule de bekende spectraalseries zoals de Lyman-serie ($m=1$), Balmer-serie ($m=2$), en Paschen-serie ($m=3$).
-	\section{Verbetering: gereduceerde massa (kern niet oneindig zwaar)}
-	Strikt genomen draait niet alleen het elektron rond de kern: beide draaien rond het massamiddelpunt.
-	Vervang daarom $m_e$ door de \emph{gereduceerde massa}
-	\[
-		\mu = \frac{m_e M}{m_e+M},
-	\]
-	waar $M$ de kernmassa is. Dan worden
-	\begin{align}
-		r_n &= \frac{n^2\hbar^2}{\mu k Z e^2},
-		\\
-		E_n &= -\frac{\mu k^2 Z^2 e^4}{2\hbar^2}\frac{1}{n^2},
-		\\
-		R &= R_\infty\frac{\mu}{m_e}.
-	\end{align}
-	Dit verklaart een deel van het isotopen-effect in spectra.
-
-	\section{De Broglie-herinterpretatie (brug naar golven)}
-	Bohrs quantisatievoorwaarde $m_e v r = n\hbar$ kan ook worden gezien als een staande-golfvoorwaarde.
-	De Broglie geeft de golflengte
-	\[
-		\lambda = \frac{h}{p}=\frac{h}{m_e v}.
-	\]
-	Een staande golf op een cirkel vereist
-	\[
-		2\pi r = n\lambda = n\frac{h}{m_e v}
-		\quad\Longrightarrow\quad
-		m_e v r = n\hbar,
-	\]
-	dus Bohrs postulaten kunnen (deels) gemotiveerd worden vanuit golfmechanica.\\
-	Zoals we in het vorige hoofdstuk besproken hebben, heeft het model van Bohr enkele beperkingen.
-	We sommen deze hier nog eens op met een diepere wiskundige uitleg:
-	\section{Beperkingen (conceptueel belangrijk)}
-	Hoewel Bohr het waterstofspectrum goed benadert, is het model fundamenteel semi-klassiek:
-	\begin{itemize}
-		\item Het veronderstelt \emph{klassieke} banen (in tegenspraak met moderne QM waar toestanden golffuncties zijn).
-		\item Het verklaart niet systematisch fijnstructuur, Zeeman/Stark-effecten, intensiteiten en selectie-regels
-		(daarvoor heb je Schr\"odinger/Dirac + perturbatietheorie nodig).
-		\item Voor grote $Z$ worden relativistische en QED-correcties belangrijk omdat $v/c\sim Z\alpha$.
-	\end{itemize}
-
-	\subsection{Wat is QED?}
-	QED staat voor \emph{Quantum Electrodynamics} (Kwantumelektrodynamica in het Nederlands) en is de kwantumtheorie van elektromagnetische interacties.
-	Het is een van de meest nauwkeurige en succesvol geteste theorieën in de natuurkunde.
-
-	Belangrijke aspecten van QED:
-	\begin{itemize}
-		\item \textbf{Fundamentele theorie:} QED beschrijft hoe geladen deeltjes (zoals elektronen) wisselwerken met fotonen (de kwanta van het elektromagnetische veld). Het combineert kwantummechanica met speciale relativiteitstheorie.
-
-		\item \textbf{Ontwikkeling:} De theorie werd ontwikkeld in de late jaren 1940 door Richard Feynman, Julian Schwinger en Sin-Itiro Tomonaga, waarvoor zij in 1965 de Nobelprijs kregen.
-
-		\item \textbf{QED-correcties in atoomfysica:} Voor het waterstofatoom voorspelt QED extreem kleine maar meetbare correcties op de energieniveaus, zoals:
-		\begin{itemize}
-			\item De \emph{Lamb-verschuiving}: een klein verschil tussen de $2S_{1/2}$ en $2P_{1/2}$ energieniveaus, veroorzaakt door kwantumfluctuaties van het elektromagnetische vacuüm.
-			\item Correcties door \emph{vacuümpolarisatie}: virtuele elektron-positronparen beïnvloeden de effectieve lading van de kern.
-			\item De afwijking van het magnetische moment van het elektron van de Dirac-waarde (het zogeheten \emph{anomale magnetische moment}, $g-2$).
-		\end{itemize}
-
-		\item \textbf{Nauwkeurigheid:} QED-berekeningen komen overeen met experimenten tot ongeveer 12 significante cijfers, wat het een van de meest nauwkeurig geteste theorieën in de wetenschap maakt.
-
-		\item \textbf{Belang voor grote $Z$:} Voor atomen met hoge kernlading $Z$ worden QED-effecten belangrijker omdat de elektronsnelheid $v/c \sim Z\alpha$ toeneemt. Bij zeer zware elementen kunnen deze correcties niet meer verwaarloosd worden.
-	\end{itemize}
-
-	In het Bohr-model worden deze subtiele kwantumeffecten volledig genegeerd, wat verklaart waarom het model slechts een benadering is van de werkelijkheid.
-	\chapter{Kwantummechanica een nieuwe theorie}
-	\epigraph{“I think I can safely say that nobody understands quantum mechanics.”}{Richard Feynman}
-	De beperkingen van het Bohr-model en de ontdekking van nieuwe experimenten (zoals het dubbel-spleet experiment) leidden tot de ontwikkeling van een nieuwe theorie: de kwantummechanica.
-	Deze theorie, ontwikkeld in de jaren 1920 door wetenschappers zoals Erwin Schrödinger, Werner Heisenberg en Paul Dirac, biedt een fundamenteel andere kijk op de natuur.
-	In plaats van te denken in termen van klassieke banen, beschrijft de kwantummechanica de toestand van een systeem met behulp van een golffunctie ($\psi$), die informatie bevat over de waarschijnlijkheid van het vinden
-	van een deeltje op een bepaalde plaats en tijd. De evolutie van deze golffunctie wordt bepaald door de Schrödingervergelijking, die een fundamentele vergelijking is in de kwantummechanica.
-	Eenvoudig gezegd, de kwantummechanica vervangt het deterministische beeld van de klassieke natuurkunde door een probabilistisch beeld, waarin de uitkomst van metingen niet met absolute zekerheid kan worden voorspeld, maar alleen in termen van waarschijnlijkheden.
-	Deze nieuwe theorie heeft niet alleen de beperkingen van het Bohr-model overwonnen, maar heeft ook geleid tot een dieper begrip van de natuur en heeft talloze toepassingen in de moderne technologie, zoals in de ontwikkeling van halfgeleiders, lasers en kwantumcomputers.
-	Het is belangrijk om te vermelden dat aan het zogeheten correspondentie pricipe volledig voldaan wordt: voor grote $n$ (en dus grote banen) benadert het Bohr-model de resultaten van de kwantummechanica,
-	wat aantoont dat de klassieke natuurkunde een goede benadering is van de kwantummechanica in het macroscopische regime.
-    
-	\chapter{operator-formalisme}
-     	\epigraph{“The mathematical formulation of quantum mechanics is not unique. There are many ways to formulate it, and they are all equivalent.”}{Paul Dirac}
-	\section{Operator-formalisme in de Quantummechanica:
-	Functionaal-analytische formulering}
-
-	\section{Hilbertruimte-structuur}
-
-	Een kwantumsysteem wordt gemodelleerd door een complexe separabele Hilbertruimte
-	$\mathcal{H}$ met inwendig product
-	$\langle \cdot , \cdot \rangle$, lineair in de tweede component.
-
-	De norm wordt gegeven door:
-	\begin{equation}
-		\|\psi\| = \sqrt{\langle \psi,\psi \rangle}
-	\end{equation}
-
-	Fysische toestanden worden gerepresenteerd door stralen in $\mathcal{H}$,
-	d.w.z. equivalentieklassen
-	\[
-		|\psi\rangle \sim \lambda |\psi\rangle,
-		\quad \lambda \in \mathbb{C}\setminus\{0\}.
-	\]
-
-	\section{Lineaire Operatoren en Domeinen}
-
-	Een lineaire operator is een afbeelding
-	\[
-		\hat{A} : \mathcal{D}(\hat{A}) \subset \mathcal{H}
-		\to \mathcal{H}
-	\]
-	waar $\mathcal{D}(\hat{A})$ het domein is.
-
-	Voor fysische observabelen zijn operatoren in het algemeen
-	\emph{onbegrensd}, waardoor:
-
-	\begin{itemize}
-		\item $\mathcal{D}(\hat{A}) \neq \mathcal{H}$
-		\item $\hat{A}$ niet continu is
-	\end{itemize}
-
-	Een operator is \textbf{dicht gedefinieerd} indien
-	$\overline{\mathcal{D}(\hat{A})} = \mathcal{H}$.
-
-	\section{Adjoints, Symmetrie en Zelf-adjunctheid}
-
-	De geadjungeerde operator $\hat{A}^\dagger$ is gedefinieerd via:
-
-	\begin{equation}
-		\langle \phi, \hat{A}\psi \rangle
-		=
-		\langle \hat{A}^\dagger \phi, \psi \rangle
-	\end{equation}
-
-	voor alle $\psi \in \mathcal{D}(\hat{A})$ waarvoor
-	de linkerzijde continu is in $\phi$.
-
-	Een operator heet:
-
-	\begin{itemize}
-		\item \textbf{Symmetrisch} indien
-		$\hat{A} \subset \hat{A}^\dagger$
-		\item \textbf{Zelf-adjunct} indien
-		$\hat{A} = \hat{A}^\dagger$
-		\item \textbf{Essentieel zelf-adjunct} indien de sluiting
-		$\overline{\hat{A}}$ zelf-adjunct is
-	\end{itemize}
-
-	Voor observabelen is \emph{zelf-adjunctheid} noodzakelijk,
-	niet enkel symmetrie.
-
-	\section*{4. Spectraaltheorema}
-
-	Voor elke zelf-adjuncte operator $\hat{A}$ bestaat er een unieke
-	projectiemaat $E_A(\lambda)$ zodat:
-
-	\begin{equation}
-		\hat{A} =
-		\int_{\sigma(\hat{A})}
-		\lambda \, dE_A(\lambda)
-	\end{equation}
-
-	waar $\sigma(\hat{A})$ het spectrum is.
-
-	De verwachtingswaarde wordt dan:
-
-	\begin{equation}
-		\langle \psi, \hat{A}\psi \rangle
-		=
-		\int_{\sigma(\hat{A})}
-		\lambda \,
-		d\mu_\psi(\lambda)
-	\end{equation}
-
-	met maat
-	\[
-		\mu_\psi(\Delta)
-		=
-		\langle \psi, E_A(\Delta)\psi\rangle.
-	\]
-
-	\section{Continue Spectra en Rigged Hilbert Space}
-
-	Voor operatoren met continu spectrum (bv. impulsoperator)
-	liggen de gegeneraliseerde eigenvectoren niet in $\mathcal{H}$.
-
-	Men gebruikt een Gelfand-tripel:
-
-	\[
-		\Phi \subset \mathcal{H} \subset \Phi'
-	\]
-
-	waar:
-
-	\begin{itemize}
-		\item $\Phi$ een dichte testfunctieruimte is
-		\item $\Phi'$ de duale ruimte (distributies)
-	\end{itemize}
-
-	De Dirac-delta-eigenvectoren behoren tot $\Phi'$.
-
-	\section*{6. Canonieke Commutatierelaties}
-
-	De impulsoperator op $L^2(\mathbb{R})$ wordt gedefinieerd als:
-
-	\begin{equation}
-		\hat{p} = -i\hbar \frac{d}{dx}
-	\end{equation}
-
-	met domein:
-	\[
-		\mathcal{D}(\hat{p})
-		=
-		\{ \psi \in L^2(\mathbb{R}) :
-		\psi \text{ absoluut continu},
-		\psi' \in L^2 \}.
-	\]
-
-	De canonieke commutatierelatie
-
-	\[
-		[\hat{x},\hat{p}] = i\hbar
-	\]
-
-	geldt enkel op een geschikte gemeenschappelijke kern
-	$\mathcal{D}(\hat{x}\hat{p}) \cap
-	\mathcal{D}(\hat{p}\hat{x})$.
-
-	\section{Tijdsevolutie en Stone's Theorem}
-
-	Volgens Stone’s stelling correspondeert elke sterk-continu
-	éénparameter unitaire groep $U(t)$ met een unieke zelf-adjuncte
-	generator $\hat{H}$:
-
-	\begin{equation}
-		U(t) = e^{-it\hat{H}/\hbar}
-	\end{equation}
-
-	De Schrödingervergelijking volgt als:
-
-	\begin{equation}
-		i\hbar \frac{d}{dt} \psi(t)
-		=
-		\hat{H}\psi(t)
-	\end{equation}
-
-	\section{Onzekerheidsrelatie in Algemene Vorm}
-
-	Voor twee zelf-adjuncte operatoren $\hat{A},\hat{B}$
-	met geschikte gemeenschappelijke domein geldt:
-
-	\begin{equation}
-		\sigma_A^2 \sigma_B^2
-		\ge
-		\frac{1}{4}
-		\left|
-			\langle [\hat{A},\hat{B}] \rangle
-		\right|^2
-		+
-		\frac{1}{4}
-		\left|
-			\langle \{\Delta A,\Delta B\} \rangle
-		\right|^2
-	\end{equation}
-
-	waar $\{\cdot,\cdot\}$ de anticommutator is.
-
-
-	\chapter{De Golffunctie en haar interpretatie van het dubbel-spleet experiment}
-	De golffunctie vormt de hoeksteen van de kwantummechanica. De golffunctie mag niet gezien worden als een klassieke golf, maar eerder als een wiskundige constructie
-	die de waarschijnlijkheid van het vinden van een deeltje op een bepaalde plaats en tijd beschrijft.
-	De golffunctie wordt vaak aangeduid met de Griekse letter $\psi$ en is een complex getal dat kan worden geschreven als $\psi(x,t) = A e^{i\theta}$, waarbij $A$ de amplitude is en $\theta$ de fase.
-	Het is ook belangrijk dat we een formele afbakening maken : we spreken over niet relativistische kwantummechanica, dus we negeren
-	\begin{itemize}
-		\item relativistische effecten en QED-correcties, wat een goede benadering is voor systemen met lage energie en kleine snelheden (zoals het waterstofatoom in de grondtoestand).
-		\item we gebruiken de klassieke ruimt en tijd waarbij we het hebben over absolute tijd en geen ruimtetijd zoals in de relativiteitstheorie.
-		\item We gebruiken de Galilei invariant in plaats van de Lorentz invariant, wat betekent dat we geen rekening houden met de effecten van speciale relativiteit.
-		\item we stipuleren dat de snelheid  $v<<c$ waarmee we zeggen de de lichtsnelheid $c$ geen dynamische parameter is in onze theorie.
-	\end{itemize}
-	Voordat we hier verder gaan, lijkt het me een goed idee om eerst even te herhalen wat de complexe getallen zijn en hoe ze werken,
-	aangezien de golffunctie een complex getal is en het begrijpen van complexe getallen essentieel is voor het begrijpen van de golffunctie en de kwantummechanica in het algemeen.
-	\section{Herhaling: Complexe getallen en hun rol in de quantummechanica}
-
-	\subsection{Definitie van complexe getallen}
-
-	Een complex getal wordt gedefinieerd als een element van de verzameling
-
-	\[
-		\mathbb{C} = \{ z = x + iy \mid x,y \in \mathbb{R} \}
-	\]
-
-	waarbij:
-	\begin{itemize}
-		\item $x = \mathrm{Re}(z)$ het reële deel is,
-		\item $y = \mathrm{Im}(z)$ het imaginaire deel is,
-		\item $i$ de imaginaire eenheid is met eigenschap
-		\[
-			i^2 = -1.
-		\]
-	\end{itemize}
-
-	De verzameling $\mathbb{C}$ vormt een lichaam (veld) onder de gebruikelijke optelling en vermenigvuldiging.
-
-	\subsection{Rekenregels}
-
-	Voor twee complexe getallen $z_1 = x_1 + iy_1$ en $z_2 = x_2 + iy_2$ geldt:
-
-	\paragraph{Optelling}
-	\[
-		z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2)
-	\]
-
-	\paragraph{Vermenigvuldiging}
-	\[
-		z_1 z_2 = (x_1x_2 - y_1y_2) + i(x_1y_2 + x_2y_1)
-	\]
-
-	\subsection{Complex geconjugeerde en modulus}
-
-	De complexe geconjugeerde van $z = x + iy$ is gedefinieerd als:
-
-	\[
-		z^* = x - iy
-	\]
-
-	Belangrijke eigenschap:
-
-	\[
-		z z^* = x^2 + y^2
-	\]
-
-	De modulus (of absolute waarde) van $z$ wordt gedefinieerd als:
-
-	\[
-		|z| = \sqrt{z z^*} = \sqrt{x^2 + y^2}
-	\]
-
-	In de quantummechanica speelt dit een fundamentele rol omdat de kansdichtheid gegeven wordt door:
-
-	\[
-		|\psi(x,t)|^2 = \psi^*(x,t)\psi(x,t)
-	\]
-
-	\subsection{Geometrische interpretatie}
-
-	Complexe getallen kunnen geïnterpreteerd worden als punten in het complexe vlak (Argand-diagram), waarbij:
-
-	\[
-		z = x + iy \leftrightarrow (x,y)
-	\]
-
-	De modulus is de afstand tot de oorsprong:
-
-	\[
-		r = |z|
-	\]
-
-	en het argument $\theta$ wordt gedefinieerd via:
-
-	\[
-		\theta = \arctan\left(\frac{y}{x}\right)
-	\]
-
-	\subsection{Poolcoördinaten en exponentiële vorm}
-
-	Een complex getal kan geschreven worden in poolvorm:
-
-	\[
-		z = r(\cos\theta + i\sin\theta)
-	\]
-
-	Met de formule van Euler:
-
-	\[
-		e^{i\theta} = \cos\theta + i\sin\theta
-	\]
-
-	kan men schrijven:
-
-	\[
-		z = r e^{i\theta}
-	\]
-
-	Dit is de meest natuurlijke representatie in de quantummechanica.
-
-	\subsection{Eigenschappen van de exponentiële vorm}
-
-	Voor twee complexe getallen:
-
-	\[
-		z_1 = r_1 e^{i\theta_1}, \quad z_2 = r_2 e^{i\theta_2}
-	\]
-
-	geldt:
-
-	\[
-		z_1 z_2 = r_1 r_2 e^{i(\theta_1+\theta_2)}
-	\]
-
-	\[
-		\frac{z_1}{z_2} = \frac{r_1}{r_2} e^{i(\theta_1-\theta_2)}
-	\]
-
-	Vermenigvuldigen van complexe getallen komt dus overeen met:
-	\begin{itemize}
-		\item vermenigvuldigen van de moduli,
-		\item optellen van de fasen.
-	\end{itemize}
-
-	Dit verklaart interferentie-effecten in de quantummechanica.
-
-	\subsection{Complexe differentieerbaarheid}
-
-	In de quantummechanica werken we met complexe functies:
-
-	\[
-		\psi : \mathbb{R}^n \times \mathbb{R} \to \mathbb{C}
-	\]
-
-	De afgeleide wordt componentgewijs gedefinieerd:
-
-	\[
-		\frac{\partial \psi}{\partial x}
-		=
-		\frac{\partial}{\partial x}(\mathrm{Re}\,\psi)
-		+
-		i
-		\frac{\partial}{\partial x}(\mathrm{Im}\,\psi)
-	\]
-
-	Voor vlakke golven geldt bijvoorbeeld:
-
-	\[
-		\psi(x,t) = Ae^{i(kx-\omega t)}
-	\]
-
-	waarbij:
-
-	\[
-		\frac{\partial \psi}{\partial x} = ik\psi,
-		\quad
-		\frac{\partial \psi}{\partial t} = -i\omega\psi.
-	\]
-
-	Dit is precies de reden waarom de impuls- en energie-operatoren in de quantummechanica worden gedefinieerd als:
-
-	\[
-		\hat{p} = -i\hbar \frac{\partial}{\partial x}
-	\]
-
-	\[
-		\hat{E} = i\hbar \frac{\partial}{\partial t}
-	\]
-
-	\subsection{Lineaire structuur}
-
-	De verzameling complexe functies vormt een complexe vectorruimte. Indien $\psi_1$ en $\psi_2$ oplossingen zijn van de Schrödingervergelijking, dan is ook:
-
-	\[
-		\alpha \psi_1 + \beta \psi_2
-	\]
-
-	met $\alpha,\beta \in \mathbb{C}$ opnieuw een oplossing (superpositieprincipe).
-
-	\subsection{Waarom complexe getallen fundamenteel zijn}
-
-	De kernredenen waarom complexe getallen essentieel zijn in de quantummechanica:
-
-	\begin{enumerate}
-		\item De Schrödingervergelijking bevat expliciet de factor $i$.
-		\item Interferentie vereist fase-informatie.
-		\item Probabiliteiten worden gegeven door $|\psi|^2$, wat positieve reële getallen oplevert.
-		\item Unitaire tijdsevolutie vereist complexe Hilbertruimten.
-	\end{enumerate}
-
-	Zonder complexe getallen zou de lineaire, unitaire structuur van de quantummechanica niet mogelijk zijn.
-
-
-	\chapter{De Schrödingervergelijking: dynamica van de golffunctie}
-	De tijdafhankelijke Schrödingervergelijking is de fundamentele vergelijking die de evolutie van de golffunctie $\psi(x,t)$ beschrijft:
-	\[
-		i\hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \psi + V(x)\psi.
-	\]
-	Deze vergelijking is een partiële differentiaalvergelijking van de eerste orde in tijd en tweede orde in ruimte. Hierin is:
-	\begin{itemize}
-		\item $i$ de imaginaire eenheid,
-		\item $\hbar$ de gereduceerde Planck-constante,
-		\item $m$ de massa van het deeltje,
-		\item $\nabla^2$ de Laplace-operator, die de ruimtelijke tweede afgeleide van $\psi$ geeft,
-		\item $V(x)$ de potentiële energie als functie van de positie $x$.
-	\end{itemize}
-	De Schrödingervergelijking kan worden afgeleid vanuit de energie-operator (Hamiltoniaan) en de tijdsevolutie van toestanden in de quantummechanica.
-	De oplossing van deze vergelijking geeft de golffunctie $\psi(x,t)$, die alle informatie bevat over het systeem op tijd $t$.
-	Hoewel de golffunctie $\psi(x,t)$ zelf een complex getal is en daardoor niet direct meetbaar is, bezit het kwadraat van de absolute waarde ervan een diepe fysische betekenis.
-	Volgens de Born-interpretatie representeert $|\psi(x,t)|^2$ de waarschijnlijkheidsdichtheid om het deeltje op tijdstip $t$ op positie $x$ aan te treffen.
-	De Schrödingervergelijking dicteert dus niet het exacte pad van een deeltje — zoals de wetten van Newton dat doen in de klassieke mechanica —
-	maar beschrijft hoe deze kansgolven zich door de ruimte voortplanten.
-	Dit markeert de fundamentele overstap van deterministische banen naar probabilistische toestanden.
-
-	In dit hoofdstuk zullen we de dynamica van deze golffunctie in detail bestuderen.
-	We beginnen met de overgang van klassieke energie naar kwantumoperatoren, dan gaan we het hebben over de tijdsafhankelijke Schrödingervergelijking, om het dan te hebben over
-	het conceptualiseren van de Hamilton-operator $\hat{H}$, waarmee we de Schrödingervergelijking compacter kunnen schrijven als $i\hbar \frac{\partial}{\partial t}\psi = \hat{H}\psi$.
-
-	Vervolgens introduceren we de techniek van \textit{scheiding van variabelen}.
-	Dit stelt ons in staat om de tijdafhankelijke vergelijking te splitsen in een tijdonafhankelijk deel en een tijdsafhankelijk deel.
-	Dit leidt tot het concept van \textit{stationaire toestanden}: toestanden waarbij de waarschijnlijkheidsdichtheid constant blijft in de tijd,
-	maar de fase van de golffunctie wel evolueert.
-	Tot slot zullen we kijken naar de behoudswet van waarschijnlijkheid en hoe de golffunctie zich gedraagt onder invloed van verschillende potentiaallandschappen $V(x)$.
-
-	\section{Van klassieke energie naar kwantumoperatoren}
-	In de klassieke mechanica wordt de totale energie van een deeltje gegeven door de Hamiltoniaan:
-	\[
-	H = \frac{p^2}{2m} + V(x),
-	\]
-	waar $p$ de impuls is en $V(x)$ de potentiële energie. In de kwantummechanica wordt deze Hamiltoniaan omgezet in een operator $\hat{H}$ die werkt op de golffunctie $\psi(x,t)$.
-	De impuls $p$ wordt vervangen door de impulsoperator $\hat{p} = -i\hbar \frac{\partial}{\partial x}$, en de Hamiltoniaan wordt:
-	\[
-	\hat{H} = -\frac{\hbar^2}{2m} \nabla^2 + V(x).
-	\]
-	Deze operator $\hat{H}$ wordt de Hamilton-operator genoemd en speelt een centrale rol in de dynamica van het systeem.
-	De tijdafhankelijke Schrödingervergelijking kan
-	nu compact worden geschreven als:
-	\[
-	i\hbar \frac{\partial \psi}{\partial t} = \hat{H}\psi.
-	\]
-	\subsection{Motivatie voor de operatorvervangingen}
-
-	De overgang van klassieke mechanica naar kwantummechanica bestaat niet enkel
-	uit het formeel vervangen van grootheden door operatoren. De operatoren voor
-	impuls en energie worden gemotiveerd door de golfachtige aard van materie.
-
-	Voor een vrij deeltje met scherp bepaalde impuls en energie gebruiken we een
-	vlakke golf van de vorm
-	\[
-		\psi(x,t)=Ae^{i(kx-\omega t)}.
-	\]
-	Deze formule beschrijft een vlakke materiegolf met constante amplitude $A$ en
-	een fase $kx-\omega t$, waarbij $k$ het golfgetal en $\omega$ de hoekfrequentie is.
-
-	Volgens de relaties van de Broglie en Planck-Einstein geldt:
-	\[
-		p=\hbar k,
-		\qquad
-		E=\hbar\omega.
-	\]
+    \maketitle
+    \tableofcontents
+    \begin{abstract}
+        Dit document biedt een kritische inleiding tot de overgang van de klassieke natuurkunde naar de moderne kwantummechanica, met een specifieke focus op de evolutie van atoommodellen. Centraal staat het atoommodel van Bohr, dat een revolutionaire stap betekende door de introductie van kwantisering in de atomaire structuur.
+
+        De kern van deze verhandeling analyseert de drie postulaten van Bohr:
+        \begin{enumerate}
+            \item De existentie van stationaire banen waarin elektronen geen straling uitzenden.
+            \item De voorwaarde voor kwantisering van het impulsmoment: $L = n\hbar$.
+            \item De frequentievoorwaarde bij elektronenovergangen tussen energieniveaus.
+        \end{enumerate}
+
+        Hoewel het model van Bohr succesvol de spectraallijnen van waterstof verklaarde, worden de fundamentele beperkingen ervan besproken, zoals het onvermogen om spectra van complexere atomen te voorspellen en het negeren van de golf-deeltje dualiteit. Tot slot wordt uiteengezet hoe deze tekortkomingen de noodzaak creëerden voor het kwantummechanisch atoommodel van Schrödinger. Hierbij verschuift het paradigma van deterministische banen naar de probabilistische benadering van de golffunctie ($\psi$), gebaseerd op de fundamentele Schrödingervergelijking.
+    \end{abstract}
+
+
+    \chapter{Het atoommodel van Bohr}
+    \epigraph{“The more success the quantum theory has, the sillier it looks.”}{Albert Einstein}
+
+    Het atoommodel van Bohr, geïntroduceerd in 1913, was een baanbrekende stap in de ontwikkeling van de kwantummechanica.
+    Het gaf ons een eerste inzicht in de structuur van het atoom en de manier waarop elektronen zich gedragen.
+    Bohr stelde drie postulaten voor die de structuur van het atoom beschrijven:
+    \begin{itemize}
+        \item Elektronen mogen alleen bewegen in bepaalde banen (schillen) rond de kern.
+        Deze banen hebben een vaste energie en worden stationaire banen genoemd.
+        Er is geen energieverlies door straling zolang het elektron zich in een stationaire baan bevindt.
+        \item Kwantificatie van energie: \\
+        Niet alle banen zijn toegestaan; alleen die banen waarbij het impulsmoment van het elektron een geheel veelvoud is van $\hbar$ (de gereduceerde Planck-constante) zijn toegestaan. Dit wordt uitgedrukt als $L = n\hbar$, waarbij $n$ een positief geheel getal is.\\
+        De energie van een elektron in een stationaire baan is gekwantificeerd en kan worden berekend met behulp van de formule $E_n = -\frac{13.6 \text{ eV}}{n^2}$ voor het waterstofatoom. $n$ is ook hier een geheel getal, ook wel het hoofdkwantumgetal genoemd.
+        \item Lichtemissie en -absorptie: \\
+        Een elektron kan van de ene stationaire baan naar de andere springen door het absorberen of uitzenden van een foton.
+        De energie van het foton komt overeen met het verschil in energie tussen de twee banen, wat wordt uitgedrukt als $E_{\text{foton}} = E_{\text{hoger}} - E_{\text{lager}}$.
+        Een elektron zendt licht uit wanneer het van een hogere naar een lagere baan springt, en absorbeert licht wanneer het van een lagere naar een hogere baan springt.
+        De energie van het foton kan ook worden uitgedrukt in termen van de frequentie van het licht: $E_{\text{foton}} = h\nu$, waarbij $h$ de Planck-constante is en $\nu$ de frequentie van het licht.
+        De Planck-constante is een fundamentele constante in de natuurkunde die de kwantisering van energie en impulsmoment beschrijft en heeft een waarde van ongeveer $6.626 \times 10^{-34}$ joule-seconden.
+        De frequentie van het licht is gerelateerd aan de golflengte door de formule $\nu = \frac{c}{\lambda}$, waarbij $c$ de snelheid van het licht is en $\lambda$ de golflengte van het licht.
+        Hoe hoger de energie van het foton, hoe hoger de frequentie en hoe korter de golflengte van het licht. Hoe lager de energie van het foton, hoe lager de frequentie en hoe langer de golflengte van het licht.
+        Hoe hoger de frequentie van het licht, hoe meer energie het foton heeft. Hoe lager de frequentie van het licht, hoe minder energie het foton heeft. Zo hebben de kleuren rood en oranje een lagere frequentie en minder energie dan de kleuren blauw en violet.
+    \end{itemize}
+
+
+    \section{Waarom werkt het model van Bohr?}
+    Het model van Bohr verklaart:
+    \begin{itemize}
+        \item De stabiliteit van atomen: \\
+        Volgens de klassieke natuurkunde zouden elektronen continu energie moeten verliezen door straling terwijl ze rond de kern draaien, wat zou leiden tot instabiliteit van atomen.
+        \item Het emissiespectrum van waterstof: \\
+        Bohr's model verklaart de discrete lijnen in het emissiespectrum van waterstof, die overeenkomen met de energieverschillen tussen de stationaire banen.
+        \item waarom energieniveaus van atomen gekwantificeerd zijn: \\
+    \end{itemize}
+    volgens het waterstofatoom klopt het exact met de experimenten.
+
+
+    \section{Het Bohr-model heeft beperkingen}
+    Hoewel het model van Bohr succesvol was in het verklaren van het gedrag van het waterstofatoom, heeft het verschillende beperkingen:
+    \begin{itemize}
+        \item Het model kan niet de spectra van complexere atomen verklaren, zoals helium of lithium, omdat het geen rekening houdt met de interacties tussen meerdere elektronen.
+        \item Het model negeert de golf-deeltje dualiteit van elektronen, wat later werd erkend als een fundamenteel aspect van de kwantummechanica.
+        \item Het model is niet in staat om de fijne structuur van spectraallijnen te verklaren, die wordt veroorzaakt door relativistische effecten en de spin van elektronen.
+        \item elektronen bewegen niet echt in cirkelvormige banen, maar hebben een meer complexe beweging die beter wordt beschreven door de golffunctie in de Schrödingervergelijking.
+    \end{itemize}
+    Daarom zal het later ook vervangen worden door het kwantummechanisch atoommodel van Schrödinger, dat een meer nauwkeurige en uitgebreide beschrijving biedt van de structuur en het gedrag van atomen.
+
+
+    \chapter{Het atoommodel van Bohr wiskundig gezien}
+    Nu we de postulaten van Bohr hebben besproken, kunnen we deze wiskundig formuleren en analyseren. \\
+    We beginnen met een herhaling van de zaken die we in het vorige hoofdstuk hebben besproken:
+
+
+    \section{Postulaten (Bohr, 1913)}
+    Bohr introduceerde (in moderne notatie) de volgende kernidee\"en voor het waterstofachtige atoom (kernlading $+Ze$ en \'e\'en elektron):
+    \begin{enumerate}
+        \item Het elektron kan zich enkel in \emph{stationaire banen} bevinden zonder straling uit te zenden.
+        \item Enkel bij een overgang $n\to m$ wordt straling uitgezonden/geabsorbeerd met
+        \[
+            h\nu = E_n - E_m.
+        \]
+        \item De baanimpuls is gequantiseerd:
+        \[
+            L = m_e v r = n\hbar,\qquad n\in\mathbb{N}.
+        \]
+    \end{enumerate}
+
+
+    \section{Dynamica: Coulombkracht als centripetale kracht}
+    Neem een cirkelbaan met straal $r$ en snelheid $v$. De Coulombkracht levert de centripetale kracht:
+    \begin{align}
+        \frac{m_e v^2}{r} &= \frac{1}{4\pi\varepsilon_0}\frac{Z e^2}{r^2}.
+        \label{eq:coulomb_centripetaal}
+    \end{align}
+    De uitkomst wordt uitgedrukt in Newton (N)\\
+
+    Definieer voor compactheid
+    \[
+        k \equiv \frac{1}{4\pi\varepsilon_0}.
+    \]
+    Dan wordt \eqref{eq:coulomb_centripetaal}
+    \begin{align}
+        m_e v^2 &= \frac{k Z e^2}{r}.
+        \label{eq:mv2}
+    \end{align}
+
+    e is de elementaire lading en wordt uitgedrukt in Coulomb (C)\\
+    $\varepsilon_0$ is de permittiviteit van het vacuüm en wordt uitgedrukt in Farad per meter (F/m)\\
+    r is de afstand van het elektron tot de kern en wordt uitgedrukt in meter (m)\\
+    $m_e$ is de massa van het elektron en wordt uitgedrukt in kilogram (kg)\\
+    v is de snelheid van het elektron en wordt uitgedrukt in meter per seconde (m/s)\\
+
+
+    \section{Quantisatie van het impulsmoment en straal van de banen}
+    Uit $L=m_e v r = n\hbar$ volgt
+    \begin{align}
+        v &= \frac{n\hbar}{m_e r}.
+        \label{eq:v_from_L}
+    \end{align}
+    Combineer \eqref{eq:mv2} en \eqref{eq:v_from_L}:
+    \begin{align}
+        m_e\left(\frac{n\hbar}{m_e r}\right)^2 &= \frac{k Z e^2}{r}
+        \\
+        \frac{n^2\hbar^2}{m_e r^2} &= \frac{k Z e^2}{r}
+        \\
+        r_n &= \frac{n^2\hbar^2}{m_e k Z e^2}.
+        \label{eq:bohr_radius_general}
+    \end{align}
+    Voor $Z=1$ definieert men de \emph{Bohrstraal}
+    \begin{align}
+        a_0 \equiv \frac{\hbar^2}{m_e k e^2} = \frac{4\pi\varepsilon_0\hbar^2}{m_e e^2},
+    \end{align}
+    zodat
+    \begin{align}
+        r_n = \frac{n^2}{Z}\,a_0.
+    \end{align}
+    waarbij $\hbar$ de gereduceerde Planck-constante is,
+    $m_e$ de massa van het elektron,
+    $k$ de constante gedefinieerd als $\frac{1}{4\pi\varepsilon_0}$, $Z$ de kernlading,
+    en $e$ de elementaire lading. De Bohrstraal
+    $a_0$ is een fundamentele lengte-eenheid in de atoomfysica en heeft een waarde van ongeveer 0.529 Ångström (Å), wat overeenkomt met de straal van de grondtoestand van het waterstofatoom.
+
+
+    \section{Snelheden en de fijnstructuurconstante}
+    Uit \eqref{eq:mv2} en \eqref{eq:bohr_radius_general} volgt ook een eenvoudige uitdrukking voor $v_n$.
+    Gebruik \eqref{eq:v_from_L} met $r=r_n$:
+    \begin{align}
+        v_n &= \frac{n\hbar}{m_e r_n}
+        = \frac{n\hbar}{m_e}\,\frac{m_e k Z e^2}{n^2\hbar^2}
+        = \frac{k Z e^2}{n\hbar}.
+    \end{align}
+    Met $\alpha$ de fijnstructuurconstante,
+    \[
+        \alpha \equiv \frac{e^2}{4\pi\varepsilon_0\hbar c} = \frac{k e^2}{\hbar c},
+    \]
+    krijg je
+    \begin{align}
+        \frac{v_n}{c} = \frac{Z\alpha}{n}.
+    \end{align}
+    Dit toont meteen de \emph{consistentievoorwaarde} voor een niet-relativistische behandeling: $Z\alpha/n\ll 1$.
+    \\
+    waarbij:\\
+    $v_n$ de snelheid van het elektron in baan $n$ is en wordt uitgedrukt in meter per seconde (m/s)\\
+    $n$ het hoofdkwantumgetal is (een positief geheel getal)\\
+    $\hbar$ de gereduceerde Planck-constante is ($\hbar = h/2\pi \approx 1.055 \times 10^{-34}$ J·s)\\
+    $m_e$ de massa van het elektron is ($\approx 9.109 \times 10^{-31}$ kg)\\
+    $r_n$ de straal van de $n$-de baan is en wordt uitgedrukt in meter (m)\\
+    $k$ de constante is gedefinieerd als $\frac{1}{4\pi\varepsilon_0}$ ($\approx 8.988 \times 10^9$ N·m²/C²)\\
+    $Z$ de kernlading is (het aantal protonen in de kern)\\
+    $e$ de elementaire lading is ($\approx 1.602 \times 10^{-19}$ C)\\
+    $\alpha$ de fijnstructuurconstante is, een dimensieloze natuurconstante ($\alpha \approx 1/137 \approx 0.0073$)\\
+    $\varepsilon_0$ de permittiviteit van het vacuüm is ($\approx 8.854 \times 10^{-12}$ F/m)\\
+    $c$ de lichtsnelheid in vacuüm is ($\approx 2.998 \times 10^8$ m/s)\\
+
+
+    \section{Energieën van de stationaire toestanden}
+    De totale mechanische energie is
+    \[
+        E = T + V,
+    \]
+    met kinetische energie $T=\frac12 m_e v^2$ en potenti\"ele energie
+    \[
+        V(r) = -k\frac{Z e^2}{r}.
+    \]
+    Gebruik \eqref{eq:mv2}: $m_e v^2 = \frac{k Z e^2}{r}$, dus
+    \begin{align}
+        T &= \frac12\,\frac{k Z e^2}{r},
+        \\
+        E &= \frac12\,\frac{k Z e^2}{r} - \frac{k Z e^2}{r}
+        = -\frac12\,\frac{k Z e^2}{r}.
+        \label{eq:E_vs_r}
+    \end{align}
+    Invullen van $r=r_n$ uit \eqref{eq:bohr_radius_general} geeft
+    \begin{align}
+        E_n
+        &= -\frac12\,\frac{k Z e^2}{r_n}
+        = -\frac12\,k Z e^2\left(\frac{m_e k Z e^2}{n^2\hbar^2}\right)
+        \\
+        &= -\frac{m_e k^2 Z^2 e^4}{2\hbar^2}\,\frac{1}{n^2}.
+        \label{eq:bohr_energy_general}
+    \end{align}
+    Voor waterstof ($Z=1$) is
+    \[
+        E_n = -\frac{m_e k^2 e^4}{2\hbar^2}\frac{1}{n^2}
+        \approx -\frac{13.6\,\mathrm{eV}}{n^2}.
+    \]
+
+    voor de volledigheid geven we hier ook de betekenis van de symbolen die in deze formules voorkomen:
+    waarbij:\\
+    $E$ de totale mechanische energie is en wordt uitgedrukt in joule (J) of elektronvolt (eV)\\
+    $T$ de kinetische energie is (bewegingsenergie van het elektron) en wordt uitgedrukt in joule (J)\\
+    $V$ de potentiële energie is (elektrische energie door Coulombkracht) en wordt uitgedrukt in joule (J)\\
+    $m_e$ de massa van het elektron is ($\approx 9.109 \times 10^{-31}$ kg)\\
+    $v$ de snelheid van het elektron is en wordt uitgedrukt in meter per seconde (m/s)\\
+    $k$ de constante is gedefinieerd als $\frac{1}{4\pi\varepsilon_0}$ ($\approx 8.988 \times 10^9$ N·m²/C²)\\
+    $Z$ de kernlading is (het aantal protonen in de kern)\\
+    $e$ de elementaire lading is ($\approx 1.602 \times 10^{-19}$ C)\\
+    $r$ de afstand van het elektron tot de kern is en wordt uitgedrukt in meter (m)\\
+    $E_n$ de energie van het elektron in de $n$-de stationaire baan is\\
+    $r_n$ de straal van de $n$-de baan is en wordt uitgedrukt in meter (m)\\
+    $n$ het hoofdkwantumgetal is (een positief geheel getal: $n = 1, 2, 3, \ldots$)\\
+    $\hbar$ de gereduceerde Planck-constante is ($\hbar = h/2\pi \approx 1.055 \times 10^{-34}$ J·s)\\
+    eV elektronvolt is, een energie-eenheid (1 eV $\approx 1.602 \times 10^{-19}$ J)\\
+    \\
+    De negatieve waarde van $E_n$ geeft aan dat het elektron gebonden is aan de kern. Hoe negatiever de energie, hoe sterker het elektron gebonden is. Bij $E = 0$ is het elektron vrij (geïoniseerd).
+
+    \subsection{Spectrale lijnen: Rydberg-formule}
+    Bij een overgang $n\to m$ ($n>m$) geldt Bohrs frequentievoorwaarde
+    \[
+        h\nu = E_n - E_m.
+    \]
+    Met \eqref{eq:bohr_energy_general}:
+    \begin{align}
+        h\nu
+        &= \frac{m_e k^2 Z^2 e^4}{2\hbar^2}\left(\frac{1}{m^2}-\frac{1}{n^2}\right).
+    \end{align}
+    Gebruik $\nu=c/\lambda$ en $h=2\pi\hbar$:
+    \begin{align}
+        \frac{1}{\lambda}
+        &= \frac{\nu}{c}
+        = \frac{m_e k^2 Z^2 e^4}{2\hbar^2}\,\frac{1}{h c}\left(\frac{1}{m^2}-\frac{1}{n^2}\right)
+        \\
+        &= \left[\frac{m_e k^2 e^4}{4\pi\hbar^3 c}\right] Z^2
+        \left(\frac{1}{m^2}-\frac{1}{n^2}\right).
+    \end{align}
+    De factor tussen vierkante haken definieert de \emph{Rydberg-constante} (in deze eenvoudige versie met $m_e$):
+    \begin{align}
+        R_\infty \equiv \frac{m_e k^2 e^4}{4\pi\hbar^3 c}
+        = \frac{m_e e^4}{8\varepsilon_0^2 h^3 c}.
+    \end{align}
+    Dan volgt de klassieke Rydberg-formule:
+    \begin{align}
+        \frac{1}{\lambda} = R_\infty Z^2\left(\frac{1}{m^2}-\frac{1}{n^2}\right).
+    \end{align}
+
+    waarbij:\\
+    $h$ de Planck-constante is ($h \approx 6.626 \times 10^{-34}$ J·s)\\
+    $\nu$ de frequentie van het uitgezonden of geabsorbeerde licht is en wordt uitgedrukt in hertz (Hz of s$^{-1}$)\\
+    $E_n$ de energie van het elektron in de $n$-de stationaire baan is\\
+    $E_m$ de energie van het elektron in de $m$-de stationaire baan is\\
+    $n$ het hogere energieniveau is (positief geheel getal, $n > m$)\\
+    $m$ het lagere energieniveau is (positief geheel getal)\\
+    $m_e$ de massa van het elektron is ($\approx 9.109 \times 10^{-31}$ kg)\\
+    $k$ de constante is gedefinieerd als $\frac{1}{4\pi\varepsilon_0}$ ($\approx 8.988 \times 10^9$ N·m²/C²)\\
+    $Z$ de kernlading is (het aantal protonen in de kern)\\
+    $e$ de elementaire lading is ($\approx 1.602 \times 10^{-19}$ C)\\
+    $\hbar$ de gereduceerde Planck-constante is ($\hbar = h/2\pi \approx 1.055 \times 10^{-34}$ J·s)\\
+    $c$ de lichtsnelheid in vacuüm is ($\approx 2.998 \times 10^8$ m/s)\\
+    $\lambda$ de golflengte van het uitgezonden of geabsorbeerde licht is en wordt uitgedrukt in meter (m)\\
+    $R_\infty$ de Rydberg-constante is ($R_\infty \approx 1.097 \times 10^7$ m$^{-1}$)\\
+    $\varepsilon_0$ de permittiviteit van het vacuüm is ($\approx 8.854 \times 10^{-12}$ F/m)\\
+    \\
+    De Rydberg-formule voorspelt de golflengtes van de spectrale lijnen die een waterstofachtig atoom uitzendt. Voor waterstof ($Z=1$) verklaart deze formule de bekende spectraalseries zoals de Lyman-serie ($m=1$), Balmer-serie ($m=2$), en Paschen-serie ($m=3$).
+
+
+    \section{Verbetering: gereduceerde massa (kern niet oneindig zwaar)}
+    Strikt genomen draait niet alleen het elektron rond de kern: beide draaien rond het massamiddelpunt.
+    Vervang daarom $m_e$ door de \emph{gereduceerde massa}
+    \[
+        \mu = \frac{m_e M}{m_e+M},
+    \]
+    waar $M$ de kernmassa is. Dan worden
+    \begin{align}
+        r_n &= \frac{n^2\hbar^2}{\mu k Z e^2},
+        \\
+        E_n &= -\frac{\mu k^2 Z^2 e^4}{2\hbar^2}\frac{1}{n^2},
+        \\
+        R &= R_\infty\frac{\mu}{m_e}.
+    \end{align}
+    Dit verklaart een deel van het isotopen-effect in spectra.
+
+
+    \section{De Broglie-herinterpretatie (brug naar golven)}
+    Bohrs quantisatievoorwaarde $m_e v r = n\hbar$ kan ook worden gezien als een staande-golfvoorwaarde.
+    De Broglie geeft de golflengte
+    \[
+        \lambda = \frac{h}{p}=\frac{h}{m_e v}.
+    \]
+    Een staande golf op een cirkel vereist
+    \[
+        2\pi r = n\lambda = n\frac{h}{m_e v}
+        \quad\Longrightarrow\quad
+        m_e v r = n\hbar,
+    \]
+    dus Bohrs postulaten kunnen (deels) gemotiveerd worden vanuit golfmechanica.\\
+    Zoals we in het vorige hoofdstuk besproken hebben, heeft het model van Bohr enkele beperkingen.
+    We sommen deze hier nog eens op met een diepere wiskundige uitleg:
+
+
+    \section{Beperkingen (conceptueel belangrijk)}
+    Hoewel Bohr het waterstofspectrum goed benadert, is het model fundamenteel semi-klassiek:
+    \begin{itemize}
+        \item Het veronderstelt \emph{klassieke} banen (in tegenspraak met moderne QM waar toestanden golffuncties zijn).
+        \item Het verklaart niet systematisch fijnstructuur, Zeeman/Stark-effecten, intensiteiten en selectie-regels
+        (daarvoor heb je Schr\"odinger/Dirac + perturbatietheorie nodig).
+        \item Voor grote $Z$ worden relativistische en QED-correcties belangrijk omdat $v/c\sim Z\alpha$.
+    \end{itemize}
+
+    \subsection{Wat is QED?}
+    QED staat voor \emph{Quantum Electrodynamics} (Kwantumelektrodynamica in het Nederlands) en is de kwantumtheorie van elektromagnetische interacties.
+    Het is een van de meest nauwkeurige en succesvol geteste theorieën in de natuurkunde.
+
+    Belangrijke aspecten van QED:
+    \begin{itemize}
+        \item \textbf{Fundamentele theorie:} QED beschrijft hoe geladen deeltjes (zoals elektronen) wisselwerken met fotonen (de kwanta van het elektromagnetische veld). Het combineert kwantummechanica met speciale relativiteitstheorie.
+
+        \item \textbf{Ontwikkeling:} De theorie werd ontwikkeld in de late jaren 1940 door Richard Feynman, Julian Schwinger en Sin-Itiro Tomonaga, waarvoor zij in 1965 de Nobelprijs kregen.
+
+        \item \textbf{QED-correcties in atoomfysica:} Voor het waterstofatoom voorspelt QED extreem kleine maar meetbare correcties op de energieniveaus, zoals:
+        \begin{itemize}
+            \item De \emph{Lamb-verschuiving}: een klein verschil tussen de $2S_{1/2}$ en $2P_{1/2}$ energieniveaus, veroorzaakt door kwantumfluctuaties van het elektromagnetische vacuüm.
+            \item Correcties door \emph{vacuümpolarisatie}: virtuele elektron-positronparen beïnvloeden de effectieve lading van de kern.
+            \item De afwijking van het magnetische moment van het elektron van de Dirac-waarde (het zogeheten \emph{anomale magnetische moment}, $g-2$).
+        \end{itemize}
+
+        \item \textbf{Nauwkeurigheid:} QED-berekeningen komen overeen met experimenten tot ongeveer 12 significante cijfers, wat het een van de meest nauwkeurig geteste theorieën in de wetenschap maakt.
+
+        \item \textbf{Belang voor grote $Z$:} Voor atomen met hoge kernlading $Z$ worden QED-effecten belangrijker omdat de elektronsnelheid $v/c \sim Z\alpha$ toeneemt. Bij zeer zware elementen kunnen deze correcties niet meer verwaarloosd worden.
+    \end{itemize}
+
+    In het Bohr-model worden deze subtiele kwantumeffecten volledig genegeerd, wat verklaart waarom het model slechts een benadering is van de werkelijkheid.
+
+
+    \chapter{Kwantummechanica een nieuwe theorie}
+    \epigraph{“I think I can safely say that nobody understands quantum mechanics.”}{Richard Feynman}
+    De beperkingen van het Bohr-model en de ontdekking van nieuwe experimenten (zoals het dubbel-spleet experiment) leidden tot de ontwikkeling van een nieuwe theorie: de kwantummechanica.
+    Deze theorie, ontwikkeld in de jaren 1920 door wetenschappers zoals Erwin Schrödinger, Werner Heisenberg en Paul Dirac, biedt een fundamenteel andere kijk op de natuur.
+    In plaats van te denken in termen van klassieke banen, beschrijft de kwantummechanica de toestand van een systeem met behulp van een golffunctie ($\psi$), die informatie bevat over de waarschijnlijkheid van het vinden
+    van een deeltje op een bepaalde plaats en tijd. De evolutie van deze golffunctie wordt bepaald door de Schrödingervergelijking, die een fundamentele vergelijking is in de kwantummechanica.
+    Eenvoudig gezegd, de kwantummechanica vervangt het deterministische beeld van de klassieke natuurkunde door een probabilistisch beeld, waarin de uitkomst van metingen niet met absolute zekerheid kan worden voorspeld, maar alleen in termen van waarschijnlijkheden.
+    Deze nieuwe theorie heeft niet alleen de beperkingen van het Bohr-model overwonnen, maar heeft ook geleid tot een dieper begrip van de natuur en heeft talloze toepassingen in de moderne technologie, zoals in de ontwikkeling van halfgeleiders, lasers en kwantumcomputers.
+    Het is belangrijk om te vermelden dat aan het zogeheten correspondentie pricipe volledig voldaan wordt: voor grote $n$ (en dus grote banen) benadert het Bohr-model de resultaten van de kwantummechanica,
+    wat aantoont dat de klassieke natuurkunde een goede benadering is van de kwantummechanica in het macroscopische regime.
+
+
+    \chapter{operator-formalisme}
+    \epigraph{“The mathematical formulation of quantum mechanics is not unique. There are many ways to formulate it, and they are all equivalent.”}{Paul Dirac}
+
+
+    \section{Operator-formalisme in de Quantummechanica:
+    Functionaal-analytische formulering}
+
+
+    \section{Hilbertruimte-structuur}
+
+    Een kwantumsysteem wordt gemodelleerd door een complexe separabele Hilbertruimte
+    $\mathcal{H}$ met inwendig product
+    $\langle \cdot , \cdot \rangle$, lineair in de tweede component.
+
+    De norm wordt gegeven door:
+    \begin{equation}
+        \|\psi\| = \sqrt{\langle \psi,\psi \rangle}
+    \end{equation}
+
+    Fysische toestanden worden gerepresenteerd door stralen in $\mathcal{H}$,
+    d.w.z. equivalentieklassen
+    \[
+        |\psi\rangle \sim \lambda |\psi\rangle,
+        \quad \lambda \in \mathbb{C}\setminus\{0\}.
+    \]
+
+
+    \section{Lineaire Operatoren en Domeinen}
+
+    Een lineaire operator is een afbeelding
+    \[
+        \hat{A} : \mathcal{D}(\hat{A}) \subset \mathcal{H}
+        \to \mathcal{H}
+    \]
+    waar $\mathcal{D}(\hat{A})$ het domein is.
+
+    Voor fysische observabelen zijn operatoren in het algemeen
+    \emph{onbegrensd}, waardoor:
+
+    \begin{itemize}
+        \item $\mathcal{D}(\hat{A}) \neq \mathcal{H}$
+        \item $\hat{A}$ niet continu is
+    \end{itemize}
+
+    Een operator is \textbf{dicht gedefinieerd} indien
+    $\overline{\mathcal{D}(\hat{A})} = \mathcal{H}$.
+
+
+    \section{Adjoints, Symmetrie en Zelf-adjunctheid}
+
+    De geadjungeerde operator $\hat{A}^\dagger$ is gedefinieerd via:
+
+    \begin{equation}
+        \langle \phi, \hat{A}\psi \rangle
+        =
+        \langle \hat{A}^\dagger \phi, \psi \rangle
+    \end{equation}
+
+    voor alle $\psi \in \mathcal{D}(\hat{A})$ waarvoor
+    de linkerzijde continu is in $\phi$.
+
+    Een operator heet:
+
+    \begin{itemize}
+        \item \textbf{Symmetrisch} indien
+        $\hat{A} \subset \hat{A}^\dagger$
+        \item \textbf{Zelf-adjunct} indien
+        $\hat{A} = \hat{A}^\dagger$
+        \item \textbf{Essentieel zelf-adjunct} indien de sluiting
+        $\overline{\hat{A}}$ zelf-adjunct is
+    \end{itemize}
+
+    Voor observabelen is \emph{zelf-adjunctheid} noodzakelijk,
+    niet enkel symmetrie.
+
+
+    \section*{4. Spectraaltheorema}
+
+    Voor elke zelf-adjuncte operator $\hat{A}$ bestaat er een unieke
+    projectiemaat $E_A(\lambda)$ zodat:
+
+    \begin{equation}
+        \hat{A} =
+        \int_{\sigma(\hat{A})}
+        \lambda \, dE_A(\lambda)
+    \end{equation}
+
+    waar $\sigma(\hat{A})$ het spectrum is.
+
+    De verwachtingswaarde wordt dan:
+
+    \begin{equation}
+        \langle \psi, \hat{A}\psi \rangle
+        =
+        \int_{\sigma(\hat{A})}
+        \lambda \,
+        d\mu_\psi(\lambda)
+    \end{equation}
+
+    met maat
+    \[
+        \mu_\psi(\Delta)
+        =
+        \langle \psi, E_A(\Delta)\psi\rangle.
+    \]
+
+
+    \section{Continue Spectra en Rigged Hilbert Space}
+
+    Voor operatoren met continu spectrum (bv. impulsoperator)
+    liggen de gegeneraliseerde eigenvectoren niet in $\mathcal{H}$.
+
+    Men gebruikt een Gelfand-tripel:
+
+    \[
+        \Phi \subset \mathcal{H} \subset \Phi'
+    \]
+
+    waar:
+
+    \begin{itemize}
+        \item $\Phi$ een dichte testfunctieruimte is
+        \item $\Phi'$ de duale ruimte (distributies)
+    \end{itemize}
+
+    De Dirac-delta-eigenvectoren behoren tot $\Phi'$.
+
+
+    \section*{6. Canonieke Commutatierelaties}
+
+    De impulsoperator op $L^2(\mathbb{R})$ wordt gedefinieerd als:
+
+    \begin{equation}
+        \hat{p} = -i\hbar \frac{d}{dx}
+    \end{equation}
+
+    met domein:
+    \[
+        \mathcal{D}(\hat{p})
+        =
+        \{ \psi \in L^2(\mathbb{R}) :
+        \psi \text{ absoluut continu},
+        \psi' \in L^2 \}.
+    \]
+
+    De canonieke commutatierelatie
+
+    \[
+        [\hat{x},\hat{p}] = i\hbar
+    \]
+
+    geldt enkel op een geschikte gemeenschappelijke kern
+    $\mathcal{D}(\hat{x}\hat{p}) \cap
+    \mathcal{D}(\hat{p}\hat{x})$.
+
+
+    \section{Tijdsevolutie en Stone's Theorem}
+
+    Volgens Stone’s stelling correspondeert elke sterk-continu
+    éénparameter unitaire groep $U(t)$ met een unieke zelf-adjuncte
+    generator $\hat{H}$:
+
+    \begin{equation}
+        U(t) = e^{-it\hat{H}/\hbar}
+    \end{equation}
+
+    De Schrödingervergelijking volgt als:
+
+    \begin{equation}
+        i\hbar \frac{d}{dt} \psi(t)
+        =
+        \hat{H}\psi(t)
+    \end{equation}
+
+
+    \section{Onzekerheidsrelatie in Algemene Vorm}
+
+    Voor twee zelf-adjuncte operatoren $\hat{A},\hat{B}$
+    met geschikte gemeenschappelijke domein geldt:
+
+    \begin{equation}
+        \sigma_A^2 \sigma_B^2
+        \ge
+        \frac{1}{4}
+        \left|
+            \langle [\hat{A},\hat{B}] \rangle
+        \right|^2
+        +
+        \frac{1}{4}
+        \left|
+            \langle \{\Delta A,\Delta B\} \rangle
+        \right|^2
+    \end{equation}
+
+    waar $\{\cdot,\cdot\}$ de anticommutator is.
+
+
+    \chapter{De Golffunctie en haar interpretatie van het dubbel-spleet experiment}
+    De golffunctie vormt de hoeksteen van de kwantummechanica. De golffunctie mag niet gezien worden als een klassieke golf, maar eerder als een wiskundige constructie
+    die de waarschijnlijkheid van het vinden van een deeltje op een bepaalde plaats en tijd beschrijft.
+    De golffunctie wordt vaak aangeduid met de Griekse letter $\psi$ en is een complex getal dat kan worden geschreven als $\psi(x,t) = A e^{i\theta}$, waarbij $A$ de amplitude is en $\theta$ de fase.
+    Het is ook belangrijk dat we een formele afbakening maken : we spreken over niet relativistische kwantummechanica, dus we negeren
+    \begin{itemize}
+        \item relativistische effecten en QED-correcties, wat een goede benadering is voor systemen met lage energie en kleine snelheden (zoals het waterstofatoom in de grondtoestand).
+        \item we gebruiken de klassieke ruimt en tijd waarbij we het hebben over absolute tijd en geen ruimtetijd zoals in de relativiteitstheorie.
+        \item We gebruiken de Galilei invariant in plaats van de Lorentz invariant, wat betekent dat we geen rekening houden met de effecten van speciale relativiteit.
+        \item we stipuleren dat de snelheid  $v<<c$ waarmee we zeggen de de lichtsnelheid $c$ geen dynamische parameter is in onze theorie.
+    \end{itemize}
+    Voordat we hier verder gaan, lijkt het me een goed idee om eerst even te herhalen wat de complexe getallen zijn en hoe ze werken,
+    aangezien de golffunctie een complex getal is en het begrijpen van complexe getallen essentieel is voor het begrijpen van de golffunctie en de kwantummechanica in het algemeen.
+
+
+    \section{Herhaling: Complexe getallen en hun rol in de quantummechanica}
+
+    \subsection{Definitie van complexe getallen}
+
+    Een complex getal wordt gedefinieerd als een element van de verzameling
+
+    \[
+        \mathbb{C} = \{ z = x + iy \mid x,y \in \mathbb{R} \}
+    \]
+
+    waarbij:
+    \begin{itemize}
+        \item $x = \mathrm{Re}(z)$ het reële deel is,
+        \item $y = \mathrm{Im}(z)$ het imaginaire deel is,
+        \item $i$ de imaginaire eenheid is met eigenschap
+        \[
+            i^2 = -1.
+        \]
+    \end{itemize}
+
+    De verzameling $\mathbb{C}$ vormt een lichaam (veld) onder de gebruikelijke optelling en vermenigvuldiging.
+
+    \subsection{Rekenregels}
+
+    Voor twee complexe getallen $z_1 = x_1 + iy_1$ en $z_2 = x_2 + iy_2$ geldt:
+
+    \paragraph{Optelling}
+    \[
+        z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2)
+    \]
+
+    \paragraph{Vermenigvuldiging}
+    \[
+        z_1 z_2 = (x_1x_2 - y_1y_2) + i(x_1y_2 + x_2y_1)
+    \]
+
+    \subsection{Complex geconjugeerde en modulus}
+
+    De complexe geconjugeerde van $z = x + iy$ is gedefinieerd als:
+
+    \[
+        z^* = x - iy
+    \]
+
+    Belangrijke eigenschap:
+
+    \[
+        z z^* = x^2 + y^2
+    \]
+
+    De modulus (of absolute waarde) van $z$ wordt gedefinieerd als:
+
+    \[
+        |z| = \sqrt{z z^*} = \sqrt{x^2 + y^2}
+    \]
+
+    In de quantummechanica speelt dit een fundamentele rol omdat de kansdichtheid gegeven wordt door:
+
+    \[
+        |\psi(x,t)|^2 = \psi^*(x,t)\psi(x,t)
+    \]
+
+    \subsection{Geometrische interpretatie}
+
+    Complexe getallen kunnen geïnterpreteerd worden als punten in het complexe vlak (Argand-diagram), waarbij:
+
+    \[
+        z = x + iy \leftrightarrow (x,y)
+    \]
+
+    De modulus is de afstand tot de oorsprong:
+
+    \[
+        r = |z|
+    \]
+
+    en het argument $\theta$ wordt gedefinieerd via:
+
+    \[
+        \theta = \arctan\left(\frac{y}{x}\right)
+    \]
+
+    \subsection{Poolcoördinaten en exponentiële vorm}
+
+    Een complex getal kan geschreven worden in poolvorm:
+
+    \[
+        z = r(\cos\theta + i\sin\theta)
+    \]
+
+    Met de formule van Euler:
+
+    \[
+        e^{i\theta} = \cos\theta + i\sin\theta
+    \]
+
+    kan men schrijven:
+
+    \[
+        z = r e^{i\theta}
+    \]
+
+    Dit is de meest natuurlijke representatie in de quantummechanica.
+
+    \subsection{Eigenschappen van de exponentiële vorm}
+
+    Voor twee complexe getallen:
+
+    \[
+        z_1 = r_1 e^{i\theta_1}, \quad z_2 = r_2 e^{i\theta_2}
+    \]
+
+    geldt:
+
+    \[
+        z_1 z_2 = r_1 r_2 e^{i(\theta_1+\theta_2)}
+    \]
+
+    \[
+        \frac{z_1}{z_2} = \frac{r_1}{r_2} e^{i(\theta_1-\theta_2)}
+    \]
+
+    Vermenigvuldigen van complexe getallen komt dus overeen met:
+    \begin{itemize}
+        \item vermenigvuldigen van de moduli,
+        \item optellen van de fasen.
+    \end{itemize}
+
+    Dit verklaart interferentie-effecten in de quantummechanica.
+
+    \subsection{Complexe differentieerbaarheid}
+
+    In de quantummechanica werken we met complexe functies:
+
+    \[
+        \psi : \mathbb{R}^n \times \mathbb{R} \to \mathbb{C}
+    \]
+
+    De afgeleide wordt componentgewijs gedefinieerd:
+
+    \[
+        \frac{\partial \psi}{\partial x}
+        =
+        \frac{\partial}{\partial x}(\mathrm{Re}\,\psi)
+        +
+        i
+        \frac{\partial}{\partial x}(\mathrm{Im}\,\psi)
+    \]
+
+    Voor vlakke golven geldt bijvoorbeeld:
+
+    \[
+        \psi(x,t) = Ae^{i(kx-\omega t)}
+    \]
+
+    waarbij:
+
+    \[
+        \frac{\partial \psi}{\partial x} = ik\psi,
+        \quad
+        \frac{\partial \psi}{\partial t} = -i\omega\psi.
+    \]
+
+    Dit is precies de reden waarom de impuls- en energie-operatoren in de quantummechanica worden gedefinieerd als:
+
+    \[
+        \hat{p} = -i\hbar \frac{\partial}{\partial x}
+    \]
+
+    \[
+        \hat{E} = i\hbar \frac{\partial}{\partial t}
+    \]
+
+    \subsection{Lineaire structuur}
+
+    De verzameling complexe functies vormt een complexe vectorruimte. Indien $\psi_1$ en $\psi_2$ oplossingen zijn van de Schrödingervergelijking, dan is ook:
+
+    \[
+        \alpha \psi_1 + \beta \psi_2
+    \]
+
+    met $\alpha,\beta \in \mathbb{C}$ opnieuw een oplossing (superpositieprincipe).
+
+    \subsection{Waarom complexe getallen fundamenteel zijn}
+
+    De kernredenen waarom complexe getallen essentieel zijn in de quantummechanica:
+
+    \begin{enumerate}
+        \item De Schrödingervergelijking bevat expliciet de factor $i$.
+        \item Interferentie vereist fase-informatie.
+        \item Probabiliteiten worden gegeven door $|\psi|^2$, wat positieve reële getallen oplevert.
+        \item Unitaire tijdsevolutie vereist complexe Hilbertruimten.
+    \end{enumerate}
+
+    Zonder complexe getallen zou de lineaire, unitaire structuur van de quantummechanica niet mogelijk zijn.
+
+
+    \chapter{De Schrödingervergelijking: dynamica van de golffunctie}
+    De tijdafhankelijke Schrödingervergelijking is de fundamentele vergelijking die de evolutie van de golffunctie $\psi(x,t)$ beschrijft:
+    \[
+        i\hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \psi + V(x)\psi.
+    \]
+    Deze vergelijking is een partiële differentiaalvergelijking van de eerste orde in tijd en tweede orde in ruimte. Hierin is:
+    \begin{itemize}
+        \item $i$ de imaginaire eenheid,
+        \item $\hbar$ de gereduceerde Planck-constante,
+        \item $m$ de massa van het deeltje,
+        \item $\nabla^2$ de Laplace-operator, die de ruimtelijke tweede afgeleide van $\psi$ geeft,
+        \item $V(x)$ de potentiële energie als functie van de positie $x$.
+    \end{itemize}
+    De Schrödingervergelijking kan worden afgeleid vanuit de energie-operator (Hamiltoniaan) en de tijdsevolutie van toestanden in de quantummechanica.
+    De oplossing van deze vergelijking geeft de golffunctie $\psi(x,t)$, die alle informatie bevat over het systeem op tijd $t$.
+    Hoewel de golffunctie $\psi(x,t)$ zelf een complex getal is en daardoor niet direct meetbaar is, bezit het kwadraat van de absolute waarde ervan een diepe fysische betekenis.
+    Volgens de Born-interpretatie representeert $|\psi(x,t)|^2$ de waarschijnlijkheidsdichtheid om het deeltje op tijdstip $t$ op positie $x$ aan te treffen.
+    De Schrödingervergelijking dicteert dus niet het exacte pad van een deeltje — zoals de wetten van Newton dat doen in de klassieke mechanica —
+    maar beschrijft hoe deze kansgolven zich door de ruimte voortplanten.
+    Dit markeert de fundamentele overstap van deterministische banen naar probabilistische toestanden.
+
+    In dit hoofdstuk zullen we de dynamica van deze golffunctie in detail bestuderen.
+    We beginnen met de overgang van klassieke energie naar kwantumoperatoren, dan gaan we het hebben over de tijdsafhankelijke Schrödingervergelijking, om het dan te hebben over
+    het conceptualiseren van de Hamilton-operator $\hat{H}$, waarmee we de Schrödingervergelijking compacter kunnen schrijven als $i\hbar \frac{\partial}{\partial t}\psi = \hat{H}\psi$.
+
+    Vervolgens introduceren we de techniek van \textit{scheiding van variabelen}.
+    Dit stelt ons in staat om de tijdafhankelijke vergelijking te splitsen in een tijdonafhankelijk deel en een tijdsafhankelijk deel.
+    Dit leidt tot het concept van \textit{stationaire toestanden}: toestanden waarbij de waarschijnlijkheidsdichtheid constant blijft in de tijd,
+    maar de fase van de golffunctie wel evolueert.
+    Tot slot zullen we kijken naar de behoudswet van waarschijnlijkheid en hoe de golffunctie zich gedraagt onder invloed van verschillende potentiaallandschappen $V(x)$.
+
+
+    \section{Van klassieke energie naar kwantumoperatoren}
+    In de klassieke mechanica wordt de totale energie van een deeltje gegeven door de Hamiltoniaan:
+    \[
+        H = \frac{p^2}{2m} + V(x),
+    \]
+    waar $p$ de impuls is en $V(x)$ de potentiële energie. In de kwantummechanica wordt deze Hamiltoniaan omgezet in een operator $\hat{H}$ die werkt op de golffunctie $\psi(x,t)$.
+    De impuls $p$ wordt vervangen door de impulsoperator $\hat{p} = -i\hbar \frac{\partial}{\partial x}$, en de Hamiltoniaan wordt:
+    \[
+        \hat{H} = -\frac{\hbar^2}{2m} \nabla^2 + V(x).
+    \]
+    Deze operator $\hat{H}$ wordt de Hamilton-operator genoemd en speelt een centrale rol in de dynamica van het systeem.
+    De tijdafhankelijke Schrödingervergelijking kan
+    nu compact worden geschreven als:
+    \[
+        i\hbar \frac{\partial \psi}{\partial t} = \hat{H}\psi.
+    \]
+
+    \subsection{Motivatie voor de operatorvervangingen}
+
+    De overgang van klassieke mechanica naar kwantummechanica bestaat niet enkel
+    uit het formeel vervangen van grootheden door operatoren. De operatoren voor
+    impuls en energie worden gemotiveerd door de golfachtige aard van materie.
+
+    Voor een vrij deeltje met scherp bepaalde impuls en energie gebruiken we een
+    vlakke golf van de vorm
+    \[
+        \psi(x,t)=Ae^{i(kx-\omega t)}.
+    \]
+    Deze formule beschrijft een vlakke materiegolf met constante amplitude $A$ en
+    een fase $kx-\omega t$, waarbij $k$ het golfgetal en $\omega$ de hoekfrequentie is.
+
+    Volgens de relaties van de Broglie en Planck-Einstein geldt:
+    \[
+        p=\hbar k,
+        \qquad
+        E=\hbar\omega.
+    \]
     Voor de duidelijkheid leggen we hier nog even uit wat deze relaties betekenen:
-	\begin{itemize}
-		\item De relatie \(p = \hbar k\) verbindt de impuls \(p\) van een deeltje met het golfgetal \(k\) van de bijbehorende golffunctie. Het geeft aan dat de impuls van een deeltje evenredig is aan het aantal golven per eenheid lengte (golfgetal).
-		\item De relatie \(E = \hbar \omega\) verbindt de energie \(E\) van een deeltje met de hoekfrequentie \(\omega\) van de golffunctie. Het geeft aan dat de energie van een deeltje evenredig is aan hoe snel de fase van de golffunctie verandert in de tijd.
-	\end{itemize}
+    \begin{itemize}
+        \item De relatie \(p = \hbar k\) verbindt de impuls \(p\) van een deeltje met het golfgetal \(k\) van de bijbehorende golffunctie. Het geeft aan dat de impuls van een deeltje evenredig is aan het aantal golven per eenheid lengte (golfgetal).
+        \item De relatie \(E = \hbar \omega\) verbindt de energie \(E\) van een deeltje met de hoekfrequentie \(\omega\) van de golffunctie. Het geeft aan dat de energie van een deeltje evenredig is aan hoe snel de fase van de golffunctie verandert in de tijd.
+    \end{itemize}
 
-	Beschouwen we nu de ruimtelijke afgeleide van deze golffunctie, dan vinden we:
-	\[
-		\frac{\partial \psi}{\partial x}
-		=
-		ik\psi.
-	\]
-	Vermenigvuldigen we beide zijden met \(-i\hbar\), dan krijgen we:
-	\[
-		-i\hbar \frac{\partial \psi}{\partial x}
-		=
-		\hbar k \psi
-		=
-		p\psi.
-	\]
-	Hieruit volgt dat de operator
-	\[
-		\hat{p}=-i\hbar \frac{\partial}{\partial x}
-	\]
-	de golffunctie vermenigvuldigt met de impulswaarde \(p\), wanneer \(\psi\) een
-	vlakke golf is. In die zin is een vlakke golf een eigentoestand van de
-	impulsoperator:
-	\[
-		\hat{p}\psi=p\psi.
-	\]
+    Beschouwen we nu de ruimtelijke afgeleide van deze golffunctie, dan vinden we:
+    \[
+        \frac{\partial \psi}{\partial x}
+        =
+        ik\psi.
+    \]
+    Vermenigvuldigen we beide zijden met \(-i\hbar\), dan krijgen we:
+    \[
+        -i\hbar \frac{\partial \psi}{\partial x}
+        =
+        \hbar k \psi
+        =
+        p\psi.
+    \]
+    Hieruit volgt dat de operator
+    \[
+        \hat{p}=-i\hbar \frac{\partial}{\partial x}
+    \]
+    de golffunctie vermenigvuldigt met de impulswaarde \(p\), wanneer \(\psi\) een
+    vlakke golf is. In die zin is een vlakke golf een eigentoestand van de
+    impulsoperator:
+    \[
+        \hat{p}\psi=p\psi.
+    \]
 
-	Op analoge wijze bekijken we de tijdsafgeleide:
-	\[
-		\frac{\partial \psi}{\partial t}
-		=
-		-i\omega\psi.
-	\]
-	Vermenigvuldigen met \(i\hbar\) geeft:
-	\[
-		i\hbar\frac{\partial \psi}{\partial t}
-		=
-		\hbar\omega\psi
-		=
-		E\psi.
-	\]
-	Daarom definiëren we de energieoperator als
-	\[
-		\hat{E}=i\hbar\frac{\partial}{\partial t}.
-	\]
+    Op analoge wijze bekijken we de tijdsafgeleide:
+    \[
+        \frac{\partial \psi}{\partial t}
+        =
+        -i\omega\psi.
+    \]
+    Vermenigvuldigen met \(i\hbar\) geeft:
+    \[
+        i\hbar\frac{\partial \psi}{\partial t}
+        =
+        \hbar\omega\psi
+        =
+        E\psi.
+    \]
+    Daarom definiëren we de energieoperator als
+    \[
+        \hat{E}=i\hbar\frac{\partial}{\partial t}.
+    \]
 
-	De operatorvervangingen
-	\[
-		p \longrightarrow \hat{p}=-i\hbar\frac{\partial}{\partial x},
-		\qquad
-		E \longrightarrow \hat{E}=i\hbar\frac{\partial}{\partial t}
-	\]
-	zijn dus niet willekeurig. Ze drukken uit dat impuls en energie verbonden zijn
-	met respectievelijk ruimtelijke en temporele variatie van de fase van de
-	golffunctie.
+    De operatorvervangingen
+    \[
+        p \longrightarrow \hat{p}=-i\hbar\frac{\partial}{\partial x},
+        \qquad
+        E \longrightarrow \hat{E}=i\hbar\frac{\partial}{\partial t}
+    \]
+    zijn dus niet willekeurig. Ze drukken uit dat impuls en energie verbonden zijn
+    met respectievelijk ruimtelijke en temporele variatie van de fase van de
+    golffunctie.
 
-	
-	\subsection{Van de klassieke Hamiltoniaan naar de Schrödingervergelijking}
+    \subsection{Van de klassieke Hamiltoniaan naar de Schrödingervergelijking}
 
-	In één dimensie is de klassieke Hamiltoniaan
-	\[
-		H=\frac{p^2}{2m}+V(x).
-	\]
-	Na de vervanging
-	\[
-		p \longrightarrow \hat{p}=-i\hbar\frac{\partial}{\partial x}
-	\]
-	wordt de kinetische term:
-	\[
-		\frac{p^2}{2m}
-		\longrightarrow
-		\frac{\hat{p}^{\,2}}{2m}.
-	\]
-	Omdat
-	\[
-		\hat{p}^{\,2}
-		=
-		\left(-i\hbar\frac{\partial}{\partial x}\right)^2
-		=
-		-\hbar^2\frac{\partial^2}{\partial x^2},
-	\]
-	krijgen we:
-	\[
-		\hat{H}
-		=
-		-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}
-		+
-		V(x).
-	\]
+    In één dimensie is de klassieke Hamiltoniaan
+    \[
+        H=\frac{p^2}{2m}+V(x).
+    \]
+    Na de vervanging
+    \[
+        p \longrightarrow \hat{p}=-i\hbar\frac{\partial}{\partial x}
+    \]
+    wordt de kinetische term:
+    \[
+        \frac{p^2}{2m}
+        \longrightarrow
+        \frac{\hat{p}^{\,2}}{2m}.
+    \]
+    Omdat
+    \[
+        \hat{p}^{\,2}
+        =
+        \left(-i\hbar\frac{\partial}{\partial x}\right)^2
+        =
+        -\hbar^2\frac{\partial^2}{\partial x^2},
+    \]
+    krijgen we:
+    \[
+        \hat{H}
+        =
+        -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}
+        +
+        V(x).
+    \]
 
-	De tijdsafhankelijke Schrödingervergelijking volgt dan uit de identificatie
-	\[
-		\hat{E}\psi=\hat{H}\psi.
-	\]
-	Aangezien
-	\[
-		\hat{E}=i\hbar\frac{\partial}{\partial t},
-	\]
-	vinden we:
-	\[
-		i\hbar\frac{\partial \psi(x,t)}{\partial t}
-		=
-		\left(
-			-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}
-			+
-			V(x)
-		\right)\psi(x,t).
-	\]
+    De tijdsafhankelijke Schrödingervergelijking volgt dan uit de identificatie
+    \[
+        \hat{E}\psi=\hat{H}\psi.
+    \]
+    Aangezien
+    \[
+        \hat{E}=i\hbar\frac{\partial}{\partial t},
+    \]
+    vinden we:
+    \[
+        i\hbar\frac{\partial \psi(x,t)}{\partial t}
+        =
+        \left(
+            -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}
+            +
+            V(x)
+        \right)\psi(x,t).
+    \]
 
-	In drie ruimtelijke dimensies wordt de tweede afgeleide vervangen door de
-	Laplaciaan:
-	\[
-		\nabla^2
-		=
-		\frac{\partial^2}{\partial x^2}
-		+
-		\frac{\partial^2}{\partial y^2}
-		+
-		\frac{\partial^2}{\partial z^2}.
-	\]
-	De Hamilton-operator wordt dan:
-	\[
-		\hat{H}
-		=
-		-\frac{\hbar^2}{2m}\nabla^2
-		+
-		V(\mathbf{r}),
-	\]
-	en de Schrödingervergelijking krijgt de algemene vorm:
-	\[
-		i\hbar\frac{\partial \psi(\mathbf{r},t)}{\partial t}
-		=
-		\left(
-			-\frac{\hbar^2}{2m}\nabla^2
-		+
-		V(\mathbf{r})
-		\right)\psi(\mathbf{r},t).
-	\]
-	In woorden: de verandering van de golffunctie in de tijd wordt bepaald door de
-	totale energie-operator, die bestaat uit een kinetische term
-	$-\frac{\hbar^2}{2m}\nabla^2$ en de potenti\"ele energie $V(\mathbf{r})$.
+    In drie ruimtelijke dimensies wordt de tweede afgeleide vervangen door de
+    Laplaciaan:
+    \[
+        \nabla^2
+        =
+        \frac{\partial^2}{\partial x^2}
+        +
+        \frac{\partial^2}{\partial y^2}
+        +
+        \frac{\partial^2}{\partial z^2}.
+    \]
+    De Hamilton-operator wordt dan:
+    \[
+        \hat{H}
+        =
+        -\frac{\hbar^2}{2m}\nabla^2
+        +
+        V(\mathbf{r}),
+    \]
+    en de Schrödingervergelijking krijgt de algemene vorm:
+    \[
+        i\hbar\frac{\partial \psi(\mathbf{r},t)}{\partial t}
+        =
+        \left(
+            -\frac{\hbar^2}{2m}\nabla^2
+        +
+        V(\mathbf{r})
+        \right)\psi(\mathbf{r},t).
+    \]
+    In woorden: de verandering van de golffunctie in de tijd wordt bepaald door de
+    totale energie-operator, die bestaat uit een kinetische term
+    $-\frac{\hbar^2}{2m}\nabla^2$ en de potenti\"ele energie $V(\mathbf{r})$.
+
+
+    \section{De Hamiltoniaan-operator en stationaire toestanden}
+    De Hamiltoniaan-operator $\hat{H}$ is de kwantumanalogie van de totale energie in de klassieke mechanica.
+    Het is een zelf-adjuncte operator die werkt op de golffunctie $\psi$ en de energie-eigenwaarden van het systeem bepaalt.
+    Een stationaire toestand is een speciale oplossing van de Schrödingervergelijking waarbij
+    de waarschijnlijkheidsdichtheid $|\psi(x,t)|^2$ constant blijft in de tijd.
+    Met een zelf-adjuncte operator bedoelen we dat $\hat{H} = \hat{H}^\dagger$, wat betekent dat de operator gelijk is aan zijn eigen geadjungeerde.
+    Dit is een belangrijke eigenschap omdat het garandeert dat de energie-eigenwaarden reëel zijn, wat essentieel is voor fysische interpretatie.
+
+    \subsection{Definitie van stationaire toestanden}
+    Een stationaire toestand is een oplossing van de tijdafhankelijke Schrödingervergelijking van de vorm:
+    \[
+        \psi(x,t) = \phi(x)e^{-iEt/\hbar},
+    \]
+    waar $\phi(x)$ een tijdonafhankelijke functie is en $E$ een constante energie-eigenwaarde.
+    Wanneer we deze vorm in de Schrödingervergelijking substitueren, krijgen we:
+    \[
+        i\hbar \left(-\frac{iE}{\hbar}\right) \phi(x)e^{-iEt/\hbar} = -\frac{\hbar^2}{2m} \nabla^2 \phi(x)e^{-iEt/\hbar} + V(x)\phi(x)e^{-iEt/\hbar}.
+    \]
+    Na vereenvoudiging zien we dat de tijdsafhankelijke factoren aan beide zijden wegvallen, wat leidt tot de tijdonafhankelijke Schrödingervergelijking:
+    \[
+        \hat{H}\phi(x) = E\phi(x).
+    \]
+
+    \subsection{Eigenschappen van stationaire toestanden}
+
+    Stationaire toestanden spelen een centrale rol in de kwantummechanica. Ze
+    ontstaan wanneer de tijdsafhankelijke Schrödingervergelijking kan worden
+    gescheiden in een ruimtelijk en een tijdsafhankelijk deel:
+    \[
+        \psi(x,t)=\phi(x)e^{-iEt/\hbar}.
+    \]
+    Hierbij bevat \(\phi(x)\) de ruimtelijke vorm van de toestand, terwijl de factor
+    \(e^{-iEt/\hbar}\) de tijdsevolutie van de fase beschrijft.
+
+    Stationaire toestanden hebben de volgende eigenschappen:
+    \begin{itemize}
+        \item Ze zijn eigenfuncties van de Hamilton-operator \(\hat{H}\) met
+        eigenwaarde \(E\):
+        \[
+            \hat{H}\phi(x)=E\phi(x).
+        \]
+
+        \item De waarschijnlijkheidsdichtheid is constant in de tijd:
+        \[
+            |\psi(x,t)|^2
+            =
+            |\phi(x)e^{-iEt/\hbar}|^2
+            =
+            |\phi(x)|^2.
+        \]
+        Dit betekent dat de kans om het deeltje op een bepaalde positie te vinden
+        niet verandert in de tijd.
+
+        \item De fase van de golffunctie evolueert wel in de tijd:
+        \[
+            e^{-iEt/\hbar}.
+        \]
+        Deze globale fase heeft geen invloed op de waarschijnlijkheidsdichtheid,
+        omdat
+        \[
+            |e^{-iEt/\hbar}|^2=1.
+        \]
+
+        \item Bij een meting van de energie levert een stationaire toestand met
+        zekerheid de waarde \(E\). Dit volgt uit het feit dat \(\phi(x)\) een
+        eigentoestand is van de Hamilton-operator.
+
+        \item De verwachtingswaarde van elke observabele die niet expliciet van de
+        tijd afhangt, blijft in een stationaire toestand constant in de tijd.
+    \end{itemize}
+    De term ``stationair'' betekent dus niet dat de golffunctie volledig
+    onveranderlijk is. De golffunctie zelf verandert wel door een tijdsafhankelijke
+    fasefactor. Wat stationair blijft, is de waarschijnlijkheidsverdeling
+    \(|\psi(x,t)|^2\). Daarom verandert het meetbare ruimtelijke kanspatroon van het
+    deeltje niet in de tijd.
+
+    Wanneer een toestand echter een superpositie is van meerdere stationaire
+    toestanden met verschillende energieën,
+    \[
+        \psi(x,t)
+        =
+        c_1\phi_1(x)e^{-iE_1t/\hbar}
+        +
+        c_2\phi_2(x)e^{-iE_2t/\hbar},
+    \]
+    dan is de waarschijnlijkheidsdichtheid in het algemeen niet meer
+    tijdsonafhankelijk. De relatieve fase tussen de twee termen verandert namelijk
+    met de tijd:
+    \[
+        e^{-i(E_2-E_1)t/\hbar}.
+    \]
+    Daardoor kunnen interferentietermen ontstaan die wel tijdsafhankelijk zijn.
+
+
+    \chapter{Eenvoudige kwantumsystemen}
+
+    In de vorige hoofdstukken hebben we de algemene structuur van de
+    niet-relativistische kwantummechanica opgebouwd. We hebben gezien dat de
+    toestand van een systeem beschreven wordt door een golffunctie \(\psi\), dat
+    fysische grootheden worden voorgesteld door operatoren, en dat de tijdsevolutie
+    wordt bepaald door de Schrödingervergelijking:
+    \[
+        i\hbar\frac{\partial \psi}{\partial t}=\hat{H}\psi.
+    \]
+
+
+    \section{Het vrije deeltje}
+
+    Het eenvoudigste kwantumsysteem is een deeltje waarop geen kracht werkt. In dat geval is de potentiële energie nul:
+    \[
+    V(x)=0.
+    \]
+    De Hamilton-operator in één dimensie wordt dan:
+    \[
+    \hat{H}
+    =
+    -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}.
+    \]
+    De tijdsafhankelijke Schrödingervergelijking wordt:
+    \[
+    i\hbar\frac{\partial \psi(x,t)}{\partial t}
+    =
+    -\frac{\hbar^2}{2m}\frac{\partial^2 \psi(x,t)}{\partial x^2}.
+    \]
+
+    Een oplossing van deze vergelijking is de vlakke golf:
+    \[
+    \psi(x,t)=Ae^{i(kx-\omega t)}.
+    \]
+    Deze functie beschrijft een toestand met scherp bepaalde impuls en energie. Toepassing van de impulsoperator geeft:
+    \[
+    \hat{p}\psi
+    =
+    -i\hbar\frac{\partial}{\partial x}
+    Ae^{i(kx-\omega t)}
+    =
+    \hbar k \psi.
+    \]
+    Dus is de vlakke golf een eigentoestand van de impulsoperator met eigenwaarde:
+    \[
+    p=\hbar k.
+    \]
+
+    Ook de energie volgt uit de Hamilton-operator:
+    \[
+    \hat{H}\psi
+    =
+    -\frac{\hbar^2}{2m}\frac{\partial^2 \psi}{\partial x^2}
+    =
+    \frac{\hbar^2 k^2}{2m}\psi.
+    \]
+    Daarom is:
+    \[
+    E=\frac{\hbar^2 k^2}{2m}.
+    \]
+    Omdat $(p=\hbar k)$, krijgen we opnieuw de klassieke uitdrukking:
+    \[
+    E=\frac{p^2}{2m}.
+    \]
+
+    Dit voorbeeld toont dat de kwantummechanica voor een vrij deeltje de klassieke energie-impulsrelatie behoudt, maar de toestand van het deeltje beschrijft als een golf.
+
+    \subsection{Interpretatie van de vlakke golf}
+
+    Een vlakke golf heeft overal dezelfde amplitude. Daardoor is:
+    \[
+    |\psi(x,t)|^2=|A|^2.
+    \]
+    De waarschijnlijkheidsdichtheid is dus overal gelijk. Dat betekent dat het deeltje in een vlakke-golftoestand volledig onbepaald is in positie: het kan met gelijke kans overal worden aangetroffen.
+
+    Strikt genomen is een vlakke golf over de volledige ruimte niet normaliseerbaar. Ze is daarom geen volledig realistische beschrijving van een fysisch deeltje. In werkelijkheid gebruikt men golfpakketten: superposities van vlakke golven die meer gelokaliseerd zijn in de ruimte.
+
+
+    \section{Het deeltje in een oneindige potentiaalput}
+
+   Een belangrijker en fysisch rijker voorbeeld is het deeltje in een oneindige
+   potentiaalput. We beschouwen een deeltje dat opgesloten zit tussen \(x=0\) en
+   \(x=L\). De potentiaal is:
+   \[
+   V(x)=
+   \begin{cases}
+   	0, & 0<x<L,\\
+   	\infty, & x\leq 0 \text{ of } x\geq L.
+   \end{cases}
+   \]
+    Dit betekent dat het deeltje zich enkel binnen het interval (0<x<L) kan bevinden. Buiten dit gebied is de potentiaal oneindig groot, zodat de golffunctie daar nul moet zijn.
+
+    Binnen de put is (V(x)=0), zodat de tijdsonafhankelijke Schrödingervergelijking wordt:
+    \[
+    -\frac{\hbar^2}{2m}\frac{d^2\phi(x)}{dx^2}=E\phi(x).
+    \]
+    We herschrijven dit als:
+    \[
+    \frac{d^2\phi(x)}{dx^2}+k^2\phi(x)=0,
+    \]
+    waarbij:
+    \[
+    k^2=\frac{2mE}{\hbar^2}.
+    \]
+    De algemene oplossing is:
+    \[
+    \phi(x)=A\sin(kx)+B\cos(kx).
+    \]
+
+    Omdat het deeltje niet buiten de put kan voorkomen, moet de golffunctie aan de randen verdwijnen:
+    \[
+    \phi(0)=0,
+    \qquad
+    \phi(L)=0.
+    \]
+    Uit$ (\phi(0)=0)$ volgt:
+    \[
+    B=0.
+    \]
+    Dus:
+    \[
+    \phi(x)=A\sin(kx).
+    \]
+    De tweede randvoorwaarde geeft:
+    \[
+    \phi(L)=A\sin(kL)=0.
+    \]
+    Voor een niet-triviale oplossing moet gelden:
+    \[
+    \sin(kL)=0.
+    \]
+    Daaruit volgt:
+    \[
+    kL=n\pi,
+    \qquad n=1,2,3,\ldots
+    \]
+    en dus:
+    \[
+    k_n=\frac{n\pi}{L}.
+    \]
+
+    De toegelaten energieën zijn daarom:
+    \[
+    E_n
+    =
+    \frac{\hbar^2 k_n^2}{2m}
+    =
+    \frac{n^2\pi^2\hbar^2}{2mL^2}.
+    \]
+
+    Dit is een zeer belangrijk resultaat. De energie van het deeltje kan niet eender welke waarde aannemen. Alleen discrete energieniveaus zijn toegestaan. De kwantisering ontstaat hier niet doordat we ze kunstmatig opleggen, maar doordat de golffunctie aan randvoorwaarden moet voldoen.
+
+    \subsection{Genormaliseerde eigenfuncties}
+
+    De eigenfuncties van het deeltje in de oneindige potentiaalput zijn:
+    \[
+    \phi_n(x)=A\sin\left(\frac{n\pi x}{L}\right).
+    \]
+    De normalisatievoorwaarde is:
+    \[
+    \int_0^L |\phi_n(x)|^2,dx=1.
+    \]
+    Daaruit volgt:
+    \[
+    A=\sqrt{\frac{2}{L}}.
+    \]
+    De genormaliseerde eigenfuncties zijn dus:
+    \[
+    \phi_n(x)
+    =
+    \sqrt{\frac{2}{L}}
+    \sin\left(\frac{n\pi x}{L}\right).
+    \]
+
+    De volledige tijdsafhankelijke stationaire toestanden zijn:
+    \[
+    \psi_n(x,t)
+    =
+    \sqrt{\frac{2}{L}}
+    \sin\left(\frac{n\pi x}{L}\right)
+    e^{-iE_nt/\hbar}.
+    \]
+
+    Omdat de tijdsafhankelijkheid enkel in een fasefactor zit, is:
+    \[
+    |\psi_n(x,t)|^2
+    =
+    |\phi_n(x)|^2.
+    \]
+    De waarschijnlijkheidsdichtheid van een stationaire toestand verandert dus niet in de tijd.
+
+    \subsection{Fysische betekenis}
+
+    Het deeltje in een doos toont een van de diepste kenmerken van de kwantummechanica: opsluiting leidt tot kwantisering. Hoe kleiner de doos, hoe groter de minimale energie. De grondtoestand heeft energie:
+    \[
+    E_1=\frac{\pi^2\hbar^2}{2mL^2}.
+    \]
+    Deze energie is niet nul. Een kwantumdeeltje dat opgesloten is in een eindig gebied kan dus niet volledig stilstaan. Dit is nauw verbonden met de onzekerheidsrelatie: als de positie van het deeltje sterk beperkt wordt, kan de impuls niet exact nul zijn.
+
+
+    \section{Tunneling}
+
+    Een ander typisch kwantummechanisch verschijnsel is tunneling. In de klassieke mechanica kan een deeltje een potentiaalbarrière alleen passeren als zijn energie groter is dan de hoogte van de barrière. Als:
+    \[
+    E<V_0,
+    \]
+    dan is doorgang klassiek onmogelijk.
+
+    In de kwantummechanica ligt dit anders. Beschouwen we een barrière met hoogte \[(V_0)\]. In het gebied waar \[(E<V_0)\], wordt de tijdsonafhankelijke Schrödingervergelijking:
+    \[
+    -\frac{\hbar^2}{2m}\frac{d^2\phi}{dx^2}+V_0\phi=E\phi.
+    \]
+    Dit kan worden herschreven als:
+    \[
+    \frac{d^2\phi}{dx^2}
+    =
+    \kappa^2\phi,
+    \]
+    met:
+    \[
+    \kappa=
+    \sqrt{\frac{2m(V_0-E)}{\hbar^2}}.
+    \]
+    De oplossingen zijn exponentiële functies:
+    \[
+    \phi(x)=Ae^{-\kappa x}+Be^{\kappa x}.
+    \]
+
+    De fysische betekenis hiervan is dat de golffunctie in het klassiek verboden gebied niet onmiddellijk nul wordt, maar exponentieel afneemt. Daardoor kan er aan de andere kant van de barrière nog steeds een kleine, maar niet-nul waarschijnlijkheid zijn om het deeltje aan te treffen.
+
+    Dit verschijnsel heet tunneling. Het heeft geen klassiek analogon en is essentieel in vele fysische processen, zoals alfa-verval, kernfusie in sterren, halfgeleiderfysica en de werking van de scanning tunneling microscope.
+
+
+    \section{Samenvatting}
+
+    In dit hoofdstuk hebben we gezien hoe de Schrödingervergelijking toegepast wordt op eenvoudige kwantumsystemen.
+
+    Voor het vrije deeltje vonden we vlakke-golfoplossingen met scherp bepaalde impuls en energie. Voor het deeltje in een oneindige potentiaalput zagen we dat randvoorwaarden leiden tot discrete energieniveaus. Bij tunneling zagen we dat een kwantumdeeltje een klassiek verboden gebied kan binnendringen en zelfs een potentiaalbarrière kan passeren.
+
+    Deze eenvoudige systemen tonen drie fundamentele kenmerken van de kwantummechanica:
+    \begin{itemize}
+        \item de golfachtige beschrijving van materie;
+        \item de kwantisering van energie door randvoorwaarden;
+        \item het bestaan van niet-klassieke verschijnselen zoals tunneling.
+    \end{itemize}
+
+    Daarmee vormen ze een natuurlijke brug naar complexere systemen, zoals de harmonische oscillator, het impulsmoment, spin en uiteindelijk het waterstofatoom in de Schrödingerformulering.
+
+
 \end{document}
+|
