@@ -1099,54 +1099,54 @@
 
     Het eenvoudigste kwantumsysteem is een deeltje waarop geen kracht werkt. In dat geval is de potentiële energie nul:
     \[
-    V(x)=0.
+        V(x)=0.
     \]
     De Hamilton-operator in één dimensie wordt dan:
     \[
-    \hat{H}
-    =
-    -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}.
+        \hat{H}
+        =
+        -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}.
     \]
     De tijdsafhankelijke Schrödingervergelijking wordt:
     \[
-    i\hbar\frac{\partial \psi(x,t)}{\partial t}
-    =
-    -\frac{\hbar^2}{2m}\frac{\partial^2 \psi(x,t)}{\partial x^2}.
+        i\hbar\frac{\partial \psi(x,t)}{\partial t}
+        =
+        -\frac{\hbar^2}{2m}\frac{\partial^2 \psi(x,t)}{\partial x^2}.
     \]
 
     Een oplossing van deze vergelijking is de vlakke golf:
     \[
-    \psi(x,t)=Ae^{i(kx-\omega t)}.
+        \psi(x,t)=Ae^{i(kx-\omega t)}.
     \]
     Deze functie beschrijft een toestand met scherp bepaalde impuls en energie. Toepassing van de impulsoperator geeft:
     \[
-    \hat{p}\psi
-    =
-    -i\hbar\frac{\partial}{\partial x}
-    Ae^{i(kx-\omega t)}
-    =
-    \hbar k \psi.
+        \hat{p}\psi
+        =
+        -i\hbar\frac{\partial}{\partial x}
+        Ae^{i(kx-\omega t)}
+        =
+        \hbar k \psi.
     \]
     Dus is de vlakke golf een eigentoestand van de impulsoperator met eigenwaarde:
     \[
-    p=\hbar k.
+        p=\hbar k.
     \]
 
     Ook de energie volgt uit de Hamilton-operator:
     \[
-    \hat{H}\psi
-    =
-    -\frac{\hbar^2}{2m}\frac{\partial^2 \psi}{\partial x^2}
-    =
-    \frac{\hbar^2 k^2}{2m}\psi.
+        \hat{H}\psi
+        =
+        -\frac{\hbar^2}{2m}\frac{\partial^2 \psi}{\partial x^2}
+        =
+        \frac{\hbar^2 k^2}{2m}\psi.
     \]
     Daarom is:
     \[
-    E=\frac{\hbar^2 k^2}{2m}.
+        E=\frac{\hbar^2 k^2}{2m}.
     \]
     Omdat $(p=\hbar k)$, krijgen we opnieuw de klassieke uitdrukking:
     \[
-    E=\frac{p^2}{2m}.
+        E=\frac{p^2}{2m}.
     \]
 
     Dit voorbeeld toont dat de kwantummechanica voor een vrij deeltje de klassieke energie-impulsrelatie behoudt, maar de toestand van het deeltje beschrijft als een golf.
@@ -1155,7 +1155,7 @@
 
     Een vlakke golf heeft overal dezelfde amplitude. Daardoor is:
     \[
-    |\psi(x,t)|^2=|A|^2.
+        |\psi(x,t)|^2=|A|^2.
     \]
     De waarschijnlijkheidsdichtheid is dus overal gelijk. Dat betekent dat het deeltje in een vlakke-golftoestand volledig onbepaald is in positie: het kan met gelijke kans overal worden aangetroffen.
 
@@ -1164,74 +1164,74 @@
 
     \section{Het deeltje in een oneindige potentiaalput}
 
-   Een belangrijker en fysisch rijker voorbeeld is het deeltje in een oneindige
-   potentiaalput. We beschouwen een deeltje dat opgesloten zit tussen \(x=0\) en
-   \(x=L\). De potentiaal is:
-   \[
-   V(x)=
-   \begin{cases}
-   	0, & 0<x<L,\\
-   	\infty, & x\leq 0 \text{ of } x\geq L.
-   \end{cases}
-   \]
+    Een belangrijker en fysisch rijker voorbeeld is het deeltje in een oneindige
+    potentiaalput. We beschouwen een deeltje dat opgesloten zit tussen \(x=0\) en
+    \(x=L\). De potentiaal is:
+    \[
+        V(x)=
+        \begin{cases}
+            0, & 0<x<L,\\
+            \infty, & x\leq 0 \text{ of } x\geq L.
+        \end{cases}
+    \]
     Dit betekent dat het deeltje zich enkel binnen het interval (0<x<L) kan bevinden. Buiten dit gebied is de potentiaal oneindig groot, zodat de golffunctie daar nul moet zijn.
 
     Binnen de put is (V(x)=0), zodat de tijdsonafhankelijke Schrödingervergelijking wordt:
     \[
-    -\frac{\hbar^2}{2m}\frac{d^2\phi(x)}{dx^2}=E\phi(x).
+        -\frac{\hbar^2}{2m}\frac{d^2\phi(x)}{dx^2}=E\phi(x).
     \]
     We herschrijven dit als:
     \[
-    \frac{d^2\phi(x)}{dx^2}+k^2\phi(x)=0,
+        \frac{d^2\phi(x)}{dx^2}+k^2\phi(x)=0,
     \]
     waarbij:
     \[
-    k^2=\frac{2mE}{\hbar^2}.
+        k^2=\frac{2mE}{\hbar^2}.
     \]
     De algemene oplossing is:
     \[
-    \phi(x)=A\sin(kx)+B\cos(kx).
+        \phi(x)=A\sin(kx)+B\cos(kx).
     \]
 
     Omdat het deeltje niet buiten de put kan voorkomen, moet de golffunctie aan de randen verdwijnen:
     \[
-    \phi(0)=0,
-    \qquad
-    \phi(L)=0.
+        \phi(0)=0,
+        \qquad
+        \phi(L)=0.
     \]
     Uit$ (\phi(0)=0)$ volgt:
     \[
-    B=0.
+        B=0.
     \]
     Dus:
     \[
-    \phi(x)=A\sin(kx).
+        \phi(x)=A\sin(kx).
     \]
     De tweede randvoorwaarde geeft:
     \[
-    \phi(L)=A\sin(kL)=0.
+        \phi(L)=A\sin(kL)=0.
     \]
     Voor een niet-triviale oplossing moet gelden:
     \[
-    \sin(kL)=0.
+        \sin(kL)=0.
     \]
     Daaruit volgt:
     \[
-    kL=n\pi,
-    \qquad n=1,2,3,\ldots
+        kL=n\pi,
+        \qquad n=1,2,3,\ldots
     \]
     en dus:
     \[
-    k_n=\frac{n\pi}{L}.
+        k_n=\frac{n\pi}{L}.
     \]
 
     De toegelaten energieën zijn daarom:
     \[
-    E_n
-    =
-    \frac{\hbar^2 k_n^2}{2m}
-    =
-    \frac{n^2\pi^2\hbar^2}{2mL^2}.
+        E_n
+        =
+        \frac{\hbar^2 k_n^2}{2m}
+        =
+        \frac{n^2\pi^2\hbar^2}{2mL^2}.
     \]
 
     Dit is een zeer belangrijk resultaat. De energie van het deeltje kan niet eender welke waarde aannemen. Alleen discrete energieniveaus zijn toegestaan. De kwantisering ontstaat hier niet doordat we ze kunstmatig opleggen, maar doordat de golffunctie aan randvoorwaarden moet voldoen.
@@ -1240,38 +1240,38 @@
 
     De eigenfuncties van het deeltje in de oneindige potentiaalput zijn:
     \[
-    \phi_n(x)=A\sin\left(\frac{n\pi x}{L}\right).
+        \phi_n(x)=A\sin\left(\frac{n\pi x}{L}\right).
     \]
     De normalisatievoorwaarde is:
     \[
-    \int_0^L |\phi_n(x)|^2,dx=1.
+        \int_0^L |\phi_n(x)|^2,dx=1.
     \]
     Daaruit volgt:
     \[
-    A=\sqrt{\frac{2}{L}}.
+        A=\sqrt{\frac{2}{L}}.
     \]
     De genormaliseerde eigenfuncties zijn dus:
     \[
-    \phi_n(x)
-    =
-    \sqrt{\frac{2}{L}}
-    \sin\left(\frac{n\pi x}{L}\right).
+        \phi_n(x)
+        =
+        \sqrt{\frac{2}{L}}
+        \sin\left(\frac{n\pi x}{L}\right).
     \]
 
     De volledige tijdsafhankelijke stationaire toestanden zijn:
     \[
-    \psi_n(x,t)
-    =
-    \sqrt{\frac{2}{L}}
-    \sin\left(\frac{n\pi x}{L}\right)
-    e^{-iE_nt/\hbar}.
+        \psi_n(x,t)
+        =
+        \sqrt{\frac{2}{L}}
+        \sin\left(\frac{n\pi x}{L}\right)
+        e^{-iE_nt/\hbar}.
     \]
 
     Omdat de tijdsafhankelijkheid enkel in een fasefactor zit, is:
     \[
-    |\psi_n(x,t)|^2
-    =
-    |\phi_n(x)|^2.
+        |\psi_n(x,t)|^2
+        =
+        |\phi_n(x)|^2.
     \]
     De waarschijnlijkheidsdichtheid van een stationaire toestand verandert dus niet in de tijd.
 
@@ -1279,7 +1279,7 @@
 
     Het deeltje in een doos toont een van de diepste kenmerken van de kwantummechanica: opsluiting leidt tot kwantisering. Hoe kleiner de doos, hoe groter de minimale energie. De grondtoestand heeft energie:
     \[
-    E_1=\frac{\pi^2\hbar^2}{2mL^2}.
+        E_1=\frac{\pi^2\hbar^2}{2mL^2}.
     \]
     Deze energie is niet nul. Een kwantumdeeltje dat opgesloten is in een eindig gebied kan dus niet volledig stilstaan. Dit is nauw verbonden met de onzekerheidsrelatie: als de positie van het deeltje sterk beperkt wordt, kan de impuls niet exact nul zijn.
 
@@ -1288,28 +1288,28 @@
 
     Een ander typisch kwantummechanisch verschijnsel is tunneling. In de klassieke mechanica kan een deeltje een potentiaalbarrière alleen passeren als zijn energie groter is dan de hoogte van de barrière. Als:
     \[
-    E<V_0,
+        E<V_0,
     \]
     dan is doorgang klassiek onmogelijk.
 
     In de kwantummechanica ligt dit anders. Beschouwen we een barrière met hoogte \[(V_0)\]. In het gebied waar \[(E<V_0)\], wordt de tijdsonafhankelijke Schrödingervergelijking:
     \[
-    -\frac{\hbar^2}{2m}\frac{d^2\phi}{dx^2}+V_0\phi=E\phi.
+        -\frac{\hbar^2}{2m}\frac{d^2\phi}{dx^2}+V_0\phi=E\phi.
     \]
     Dit kan worden herschreven als:
     \[
-    \frac{d^2\phi}{dx^2}
-    =
-    \kappa^2\phi,
+        \frac{d^2\phi}{dx^2}
+        =
+        \kappa^2\phi,
     \]
     met:
     \[
-    \kappa=
-    \sqrt{\frac{2m(V_0-E)}{\hbar^2}}.
+        \kappa=
+        \sqrt{\frac{2m(V_0-E)}{\hbar^2}}.
     \]
     De oplossingen zijn exponentiële functies:
     \[
-    \phi(x)=Ae^{-\kappa x}+Be^{\kappa x}.
+        \phi(x)=Ae^{-\kappa x}+Be^{\kappa x}.
     \]
 
     De fysische betekenis hiervan is dat de golffunctie in het klassiek verboden gebied niet onmiddellijk nul wordt, maar exponentieel afneemt. Daardoor kan er aan de andere kant van de barrière nog steeds een kleine, maar niet-nul waarschijnlijkheid zijn om het deeltje aan te treffen.
@@ -1331,6 +1331,389 @@
     \end{itemize}
 
     Daarmee vormen ze een natuurlijke brug naar complexere systemen, zoals de harmonische oscillator, het impulsmoment, spin en uiteindelijk het waterstofatoom in de Schrödingerformulering.
+
+
+    \chapter{Metingen, observabelen en onzekerheid}
+
+    In de klassieke mechanica veronderstellen we dat een fysisch systeem op elk ogenblik welbepaalde eigenschappen bezit. Een deeltje heeft bijvoorbeeld een positie (x), een impuls (p), een energie (E), enzovoort. Een meting onthult dan in principe een reeds bestaande waarde.
+
+    In de kwantummechanica is de situatie subtieler. De toestand van een systeem wordt niet beschreven door een lijst van exacte waarden, maar door een golffunctie $(\psi)$. Deze golffunctie bevat de informatie waaruit we waarschijnlijkheden voor meetresultaten kunnen afleiden. De theorie voorspelt dus niet altijd één vast meetresultaat, maar meestal een kansverdeling van mogelijke resultaten.
+
+    Dit hoofdstuk bespreekt hoe fysische grootheden, metingen en onzekerheden in de kwantummechanica worden beschreven.
+
+
+    \section{Observabelen als operatoren}
+
+    Een fysische grootheid die gemeten kan worden, noemen we een observabele. Voorbeelden zijn positie, impuls, energie en impulsmoment. In de kwantummechanica worden observabelen voorgesteld door operatoren die werken op de golffunctie.
+
+    De positie-operator in één dimensie is:
+    \[
+        \hat{x}\psi(x)=x\psi(x).
+    \]
+
+    Deze operator vermenigvuldigt de golffunctie gewoon met de positie (x).
+
+    De impulsoperator is:
+    \[
+        \hat{p}=-i\hbar\frac{\partial}{\partial x}.
+    \]
+
+    Deze operator meet hoe snel de fase van de golffunctie verandert in de ruimte.
+
+    De energie van een systeem wordt beschreven door de Hamilton-operator:
+    \[
+        \hat{H}
+        =
+        -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}
+        +
+        V(x).
+    \]
+
+    De Hamilton-operator speelt een centrale rol omdat hij de tijdsevolutie van de golffunctie bepaalt via de Schrödingervergelijking:
+    \[
+        i\hbar\frac{\partial \psi}{\partial t}
+        =
+        \hat{H}\psi.
+    \]
+
+    Een belangrijk principe is dat observabelen worden voorgesteld door zelf-adjuncte operatoren. Dit is noodzakelijk omdat meetbare waarden reële getallen moeten zijn. De eigenwaarden van zelf-adjuncte operatoren zijn reëel, en kunnen dus als mogelijke meetresultaten geïnterpreteerd worden.
+
+
+    \section{Eigenwaarden en eigenfuncties}
+
+    Stel dat een operator $(\hat{A})$ werkt op een golffunctie $(\psi)$. Als geldt:
+    \[
+        \hat{A}\psi=a\psi,
+    \]
+    dan noemen we $(\psi) $een eigenfunctie of eigentoestand van $(\hat{A})$, en (a) de bijbehorende eigenwaarde.
+
+    De fysische betekenis hiervan is zeer belangrijk. Als een systeem zich in een eigentoestand van de observabele $(\hat{A})$ bevindt, dan levert een meting van $A)$met zekerheid de waarde$ (a)$.
+
+    Bijvoorbeeld, voor de impulsoperator geldt:
+    \[
+        \hat{p}\psi=p\psi.
+    \]
+
+    In dat geval heeft de toestand een scherp bepaalde impuls (p). Een vlakke golf
+    \[
+        \psi(x)=Ae^{ikx}
+    \]
+    is een eigentoestand van de impulsoperator, want:
+    \[
+        \hat{p}\psi
+        =
+        -i\hbar\frac{d}{dx}Ae^{ikx}
+        =
+        \hbar k Ae^{ikx}
+        =
+        \hbar k \psi.
+    \]
+
+    De bijbehorende impuls is dus:
+    \[
+        p=\hbar k.
+    \]
+
+    Op dezelfde manier zijn stationaire toestanden eigenfuncties van de Hamilton-operator:
+    \[
+        \hat{H}\phi_n=E_n\phi_n.
+    \]
+
+    Een meting van de energie in zo'n toestand levert met zekerheid de waarde $(E_n)$.
+
+
+    \section{De Born-regel}
+
+    De golffunctie zelf is meestal complex. Een complex getal kan niet rechtstreeks als kans geïnterpreteerd worden. De fysische waarschijnlijkheidsdichtheid wordt gegeven door de Born-regel:
+    \[
+        \rho(x,t)=|\psi(x,t)|^2.
+    \]
+
+    Hierbij is:
+    \[
+        |\psi(x,t)|^2=\psi^*(x,t)\psi(x,t).
+    \]
+
+    De kans om het deeltje op tijdstip (t) aan te treffen tussen (x=a) en (x=b) is:
+    \[
+        P(a\leq x\leq b)
+        =
+        \int_a^b |\psi(x,t)|^2,dx.
+    \]
+
+    Omdat de totale kans om het deeltje ergens te vinden gelijk moet zijn aan (1), moet een fysisch aanvaardbare golffunctie genormaliseerd zijn:
+    \[
+        \int_{-\infty}^{+\infty}|\psi(x,t)|^2,dx=1.
+    \]
+
+    Voor een deeltje dat opgesloten is in een eindig interval (0<x<L), wordt de normalisatievoorwaarde:
+    \[
+        \int_0^L |\psi(x,t)|^2,dx=1.
+    \]
+
+    De Born-regel vormt de brug tussen de wiskundige golffunctie en experimentele waarnemingen. De golffunctie zelf is een waarschijnlijkheidsamplitude; het kwadraat van haar modulus geeft de waarschijnlijkheidsdichtheid.
+
+
+    \section{Verwachtingswaarden}
+
+    Wanneer een systeem zich niet in een eigentoestand van een observabele bevindt, kan een meting verschillende mogelijke uitkomsten geven. Toch kan men de gemiddelde waarde voorspellen die men zou verkrijgen wanneer men dezelfde meting zeer vaak herhaalt op identiek voorbereide systemen. Deze gemiddelde waarde noemt men de verwachtingswaarde.
+
+    Voor een observabele $(\hat{A})$ is de verwachtingswaarde:
+    \[
+        \langle A\rangle
+        =
+        \langle \psi|\hat{A}|\psi\rangle.
+    \]
+
+    In de positievoorstelling wordt dit:
+    \[
+        \langle A\rangle
+        =
+        \int_{-\infty}^{+\infty}
+        \psi^*(x)\hat{A}\psi(x),dx.
+    \]
+
+    Voor de positie krijgen we:
+    \[
+        \langle x\rangle
+        =
+        \int_{-\infty}^{+\infty}
+        x|\psi(x)|^2,dx.
+    \]
+
+    Voor de impuls krijgen we:
+    \[
+        \langle p\rangle
+        =
+        \int_{-\infty}^{+\infty}
+        \psi^*(x)
+        \left(
+            -i\hbar\frac{\partial}{\partial x}
+        \right)
+        \psi(x),dx.
+    \]
+
+    De verwachtingswaarde is niet noodzakelijk een waarde die men bij één individuele meting werkelijk zal meten. Ze is het statistische gemiddelde van een groot aantal metingen op identiek voorbereide systemen.
+
+
+    \section{Superpositie en meting}
+
+    Een fundamenteel verschil tussen klassieke en kwantummechanica is het superpositieprincipe. Als $(\phi_1) $en $(\phi_2) $mogelijke toestanden zijn, dan is ook:
+    \[
+        \psi=c_1\phi_1+c_2\phi_2
+    \]
+    een mogelijke toestand, waarbij $(c_1) $en $(c_2)$ complexe coëfficiënten zijn.
+
+    Stel dat $(\phi_1)$ en $(\phi_2)$ eigentoestanden zijn van een observabele $(\hat{A})$:
+    \[
+        \hat{A}\phi_1=a_1\phi_1,
+        \qquad
+        \hat{A}\phi_2=a_2\phi_2.
+    \]
+
+    Dan betekent de toestand
+    \[
+        \psi=c_1\phi_1+c_2\phi_2
+    \]
+    niet dat het systeem simpelweg tegelijk de waarden $(a_1)$ en $(a_2) $bezit in klassieke zin. Een meting van (A) kan de waarde $(a_1)$ of de waarde $(a_2)$ opleveren.
+
+    Wanneer de toestand genormaliseerd is, geven de grootheden
+    \[
+        |c_1|^2
+        \qquad \text{en} \qquad
+        |c_2|^2
+    \]
+    de kansen om respectievelijk $(a_1)$ en $(a_2) $te meten.
+
+    Na een meting wordt het systeem aangetroffen in een eigentoestand die overeenkomt met het gemeten resultaat. Dit wordt vaak de projectie van de toestand op een eigentoestand genoemd. De precieze interpretatie hiervan is een van de diepste conceptuele vragen van de kwantummechanica.
+
+
+    \section{Commutatoren}
+
+    In de kwantummechanica is de volgorde waarin operatoren werken in het algemeen belangrijk. Voor twee operatoren $(\hat{A})$ en $(\hat{B})$ definieert men de commutator als:
+    \[
+        [\hat{A},\hat{B}]
+        =
+        \hat{A}\hat{B}
+        -
+        \hat{B}\hat{A}.
+    \]
+
+    Als:
+    \[
+        [\hat{A},\hat{B}]=0,
+    \]
+    dan zeggen we dat de operatoren commuteren. In dat geval kunnen de overeenkomstige observabelen onder geschikte voorwaarden gelijktijdig scherp bepaalde waarden hebben.
+
+    Als:
+    \[
+        [\hat{A},\hat{B}]\neq 0,
+    \]
+    dan kunnen de observabelen in het algemeen niet tegelijk exact bepaald zijn.
+
+    Het belangrijkste voorbeeld is de commutator van positie en impuls. In één dimensie geldt:
+    \[
+        [\hat{x},\hat{p}]=i\hbar.
+    \]
+
+    We kunnen dit controleren door de commutator te laten werken op een willekeurige testfunctie $(\psi(x))$:
+    \[
+        [\hat{x},\hat{p}]\psi
+        =
+        \hat{x}\hat{p}\psi-\hat{p}\hat{x}\psi.
+    \]
+
+    Nu is:
+    \[
+        \hat{x}\hat{p}\psi
+        =
+        x\left(-i\hbar\frac{d\psi}{dx}\right)
+        =
+        -i\hbar x\frac{d\psi}{dx},
+    \]
+    terwijl:
+    \[
+        \hat{p}\hat{x}\psi
+        =
+        -i\hbar\frac{d}{dx}(x\psi)
+        =
+        -i\hbar
+        \left(
+            \psi+x\frac{d\psi}{dx}
+        \right).
+    \]
+
+    Dus:
+    \[
+        [\hat{x},\hat{p}]\psi
+        =
+        -i\hbar x\frac{d\psi}{dx}
+        +
+        i\hbar
+        \left(
+            \psi+x\frac{d\psi}{dx}
+        \right)
+        =
+        i\hbar\psi.
+    \]
+
+    Daarom geldt:
+    \[
+        [\hat{x},\hat{p}]=i\hbar.
+    \]
+
+    Deze eenvoudige formule ligt aan de basis van de onzekerheidsrelatie van Heisenberg.
+
+
+    \section{Spreiding en onzekerheid}
+
+    Om onzekerheid precies te formuleren, moeten we eerst het begrip spreiding invoeren. De spreiding van een observabele (A) rond haar verwachtingswaarde wordt gegeven door:
+    \[
+        \Delta A
+        =
+        \sqrt{
+            \langle A^2\rangle-\langle A\rangle^2
+        }.
+    \]
+
+    Voor de positie is:
+    \[
+        \Delta x
+        =
+        \sqrt{
+            \langle x^2\rangle-\langle x\rangle^2
+        }.
+    \]
+
+    Voor de impuls is:
+    \[
+        \Delta p
+        =
+        \sqrt{
+            \langle p^2\rangle-\langle p\rangle^2
+        }.
+    \]
+
+    De grootheid $(\Delta x) $geeft aan hoe sterk de positie verspreid is rond haar gemiddelde waarde. De grootheid $(\Delta p)$ geeft aan hoe sterk de impuls verspreid is rond haar gemiddelde waarde.
+
+    Een kleine $(\Delta x) $betekent dat het deeltje goed gelokaliseerd is. Een kleine$ (\Delta p)$ betekent dat de impuls goed bepaald is. De kwantummechanica toont echter dat deze twee eisen niet onbeperkt tegelijk vervuld kunnen worden.
+
+
+    \section{De onzekerheidsrelatie van Heisenberg}
+
+    Voor positie en impuls geldt de onzekerheidsrelatie:
+    \[
+        \Delta x,\Delta p
+        \geq
+        \frac{\hbar}{2}.
+    \]
+
+    Deze formule zegt dat de spreiding in positie en de spreiding in impuls niet allebei willekeurig klein kunnen zijn. Hoe nauwkeuriger de positie bepaald is, hoe groter de minimale onzekerheid in de impuls wordt, en omgekeerd.
+
+    Het is belangrijk om te benadrukken dat dit geen beperking is van onze meetapparatuur. De onzekerheidsrelatie drukt geen technisch gebrek uit, maar een fundamentele eigenschap van kwantumtoestanden.
+
+    De oorsprong van deze relatie ligt in het feit dat positie en impuls worden voorgesteld door niet-commuterende operatoren:
+    \[
+        [\hat{x},\hat{p}]=i\hbar.
+    \]
+
+    Meer algemeen geldt voor twee observabelen $(\hat{A})$ en $(\hat{B}$:
+    \[
+        \Delta A,\Delta B
+        \geq
+        \frac{1}{2}
+        \left|
+            \langle [\hat{A},\hat{B}]\rangle
+        \right|.
+    \]
+
+    Voor $(\hat{A}=\hat{x})$ en $(\hat{B}=\hat{p}$ volgt:
+    \[
+        \Delta x,\Delta p
+        \geq
+        \frac{1}{2}
+        |\langle i\hbar\rangle|
+        =
+        \frac{\hbar}{2}.
+    \]
+
+
+    \section{Fysische interpretatie van de onzekerheidsrelatie}
+
+    De onzekerheidsrelatie heeft een diepe fysische betekenis. Een toestand met zeer goed bepaalde positie moet opgebouwd zijn uit veel verschillende golflengten. Omdat impuls verbonden is met golfgetal via:
+    \[
+        p=\hbar k,
+    \]
+    betekent een spreiding in golfgetallen ook een spreiding in impuls.
+
+    Een sterk gelokaliseerd golfpakket heeft dus noodzakelijk een grote spreiding in impuls. Omgekeerd heeft een vlakke golf een scherp bepaalde impuls, maar is ze volledig uitgesmeerd in de ruimte. In dat geval is de positie maximaal onzeker.
+
+    Dit verklaart waarom een deeltje in een oneindige potentiaalput niet in volledige rust kan zijn. Omdat het deeltje opgesloten is in een eindig gebied, is zijn positie beperkt. Daardoor kan zijn impuls niet exact nul zijn. De grondtoestand heeft daarom een niet-nul energie.
+
+
+    \section{Samenvatting}
+
+    In dit hoofdstuk hebben we gezien hoe metingen in de kwantummechanica worden beschreven.
+
+    Een meetbare fysische grootheid noemen we een observabele. In de kwantummechanica wordt een observabele voorgesteld door een zelf-adjuncte operator. De mogelijke meetresultaten zijn de eigenwaarden van die operator. Als een systeem zich in een eigentoestand bevindt, levert een meting met zekerheid de bijbehorende eigenwaarde.
+
+    De Born-regel verbindt de golffunctie met meetbare waarschijnlijkheden:
+    \[
+        \rho(x,t)=|\psi(x,t)|^2.
+    \]
+
+    Verwachtingswaarden geven de statistische gemiddelden van metingen op identiek voorbereide systemen.
+
+    Ten slotte hebben we gezien dat niet alle observabelen tegelijk exact bepaald kunnen zijn. Dit wordt wiskundig uitgedrukt door commutatoren. Omdat positie en impuls niet commuteren,
+    \[
+        [\hat{x},\hat{p}]=i\hbar,
+    \]
+    volgt de onzekerheidsrelatie:
+    \[
+        \Delta x,\Delta p\geq\frac{\hbar}{2}.
+    \]
+
+    De onzekerheidsrelatie is geen meetfout, maar een fundamentele eigenschap van de kwantummechanische beschrijving van de natuur.
 
 
 \end{document}
